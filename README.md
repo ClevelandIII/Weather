@@ -58,7 +58,7 @@
 
 ## Developing - Cleveland
 
-**Commit Name on GitHub:**  
+**Commit Name on GitHub:** Sometimes it changes, but it should either be ClevelandIII or just Cleveland   
 **Problems you ran into today:**  
 **Daily Interactions:**  
 **Notable Changes:**  
