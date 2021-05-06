@@ -1,13 +1,13 @@
 # Designer/Client Relations
 
-### Designer Company: The Sun Guys	
-### Designer Names: 
+### **Designer Company:** The Sun Guys	
+### **Designer Names:** 
 1.	Cleveland H. Williams III
 2.	Jimmy Williams III
 3.	Jordan Wingo	
 
-### Client Company: The Sun Guys
-### Client Names:
+### **Client Company:** The Sun Guys
+### **Client Names:**
 1.	Cleveland H. Williams III
 2.	Jimmy Williams III
 3.	Jordan Wingo  
@@ -26,7 +26,7 @@
 **Example Sites:** The Weather Channel, AccuWeather  
 **Timeline:** 3 Weeks  
 **Deadlines:** End of the semester  
-	- *Flexibility:* None
+	- *Flexibility:* None   
 **Main Contact:** cwilli290@west-mec.org, jwilli497@west-mec.org, jwingo654@west-mec.org
 
 # Designing - PC
