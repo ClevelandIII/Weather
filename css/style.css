@@ -1,1 +1,9 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+article {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+#yellow {
+  background-color: yellow;
+}
+/*# sourceMappingURL=style.css.map */
