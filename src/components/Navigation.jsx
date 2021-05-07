@@ -1,11 +1,14 @@
 import { Navbar, Nav, Form, FormControl, Button, NavDropdown } from 'react-bootstrap'
-
+import { WiNightAltCloudy } from 'react-icons/wi';
 
 const Navigation = () => {
     return (
         <>
-            <Navbar bg="light" expand="lg">
-                <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+            <Navbar bg="primary" expand="lg" className="nav">
+                <Navbar.Brand href="#home">
+                <WiNightAltCloudy style={{color: "yellow"}}></WiNightAltCloudy>
+                    THE SUN GUYS
+                </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="mr-auto">
@@ -20,8 +23,8 @@ const Navigation = () => {
                         </NavDropdown>
                     </Nav>
                     <Form inline>
-                        <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-                        <Button variant="outline-success">Search</Button>
+                        <FormControl type="text" placeholder="Search" className="mr-sm-2"/>
+                        <Button variant="outline-dark">Search</Button>
                     </Form>
                 </Navbar.Collapse>
             </Navbar>
