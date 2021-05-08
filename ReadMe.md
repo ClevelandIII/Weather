@@ -31,7 +31,7 @@
 
 # Designing - PC
 
-**Mock ups(pics):** ![alt text](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)   
+**Mock ups(pics):** ![alt text]("./img/pic.png")   
 **Effective Color Scheme:**  
 **Branding:**  
 	- *Logo description for now:*  
@@ -59,27 +59,42 @@
 ## Developing - Cleveland
 
 **Commit Name on GitHub:** Sometimes it changes, but it should either be ClevelandIII or just Cleveland   
-**Problems you ran into today:**  
-**Daily Interactions:**  
-**Notable Changes:**  
+**Problems you ran into today:** filler and header
+**Daily Interactions:** filler and header
+**Notable Changes:** filler and header
+
+**Commit Name on GitHub:** Sometimes it changes, but it should either be ClevelandIII or just Cleveland   
+**Problems you ran into today:** base filler page formatting
+**Daily Interactions:** json
+**Notable Changes:** json
 
 ---
 
 ## Developing - Jimmy
 
-**Commit Name on GitHub:**  
-**Problems you ran into today:**  
-**Daily Interactions:**  
-**Notable Changes:**  
+**Commit Name on GitHub:** Sidebat
+**Problems you ran into today:** formatting
+**Daily Interactions:** breadcrumb
+**Notable Changes:** breadcrumb
+
+**Commit Name on GitHub:** Sidebat
+**Problems you ran into today:** finalization
+**Daily Interactions:** footer and various other things
+**Notable Changes:** footer and various other things
 
 ---
 
 ## Developing - Jordan
 
-**Commit Name on GitHub:**  
-**Problems you ran into today:**  
-**Daily Interactions:**  
-**Notable Changes:**  
+**Commit Name on GitHub:** Jslash101940
+**Problems you ran into today:** portfolio
+**Daily Interactions:** portfolio
+**Notable Changes:** portfolio
+
+**Commit Name on GitHub:** Jslash101940
+**Problems you ran into today:** background
+**Daily Interactions:** background
+**Notable Changes:** background
 
 # Testing
 
