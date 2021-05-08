@@ -10,6 +10,7 @@ article {
   margin-left: 5%;
   margin-right: 5%;
   background-color: white;
+  margin-bottom: .3%;
 }
 
 #yellow {
@@ -17,7 +18,9 @@ article {
 }
 
 .rounded {
-  background-image: -webkit-gradient(linear, left top, right top, from(cyan), color-stop(blue), to(cyan));
-  background-image: linear-gradient(to right, cyan, blue, cyan);
+  background-color: #0d6efd;
+  margin-top: .3%;
+  height: 2em;
+  margin-bottom: .3%;
 }
 /*# sourceMappingURL=style.css.map */
