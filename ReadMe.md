@@ -31,7 +31,7 @@
 
 # Designing - PC
 
-**Mock ups(pics):** ![alt text]("./img/pic.png")   
+**Mock ups(pics):** ![Mock Up](https://octodex.github.com/images/yaktocat.png)  
 **Effective Color Scheme:**  
 **Branding:**  
 	- *Logo description for now:*  
