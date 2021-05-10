@@ -31,12 +31,12 @@
 
 # Designing - PC
 
-**Mock ups(pics):** ![Mock Up](https://octodex.github.com/images/yaktocat.png)  
-**Effective Color Scheme:**  
+**Mock ups(pics):** ~~Yeah, i tried to link but it didnt work. Instead...~~ I have the picture as mockup in the images folder.   
+**Effective Color Scheme:** Blue/Cyan/Green and Yellow/White   
 **Branding:**  
-	- *Logo description for now:*  
-	- *Slogan:*  
-**Wireframe, with color(pics after interview):**
+	- *Logo description for now:* Svg sun  
+	- *Slogan:* Sunny days all day  
+**Wireframe, with color(pics after interview):** Same as mockup  
 
 # Designing - mobile
 
