@@ -18,7 +18,7 @@
 
 <body>
     <!--NAV-->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <nav class="navbar navbar-expand-lg navbar-dark" id="mainNav">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
                 <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="yellow"
@@ -39,11 +39,11 @@
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
+                        <a class="nav-link active" href="#">Link</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="true">
                             Dropdown
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -57,93 +57,106 @@
                     </li>
                 </ul>
                 <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
+                    <input class="form-control me-2" id="searchBar" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" id="searching" type="submit">Search</button>
                 </form>
             </div>
     </nav>
     <!--/NAV-->
 
-    <head>
-        <meta charset="utf-8">
-        <title>Customize the scroll-bar</title>
-      
-        <style media="screen">
-            body {
-                background-image: linear-gradient(
-                    to right, dodgerblue, darkblue);
-            }
-        </style>
-    </head>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d143541.32682596688!2d-112.23402224892378!3d33.55232297728269!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1620691015031!5m2!1sen!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>    <!--Article-->
-    <!--Breadcrumb-->
-    <article>
+    <!--Main-->
+    <main>
 
-        <p>
-            <nav aria-label="breadcrumb" class="navbar rounded" style="--bs-breadcrumb-divider: '';">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="#" class="text-light">Current</a></li>
-                    <li class="breadcrumb-item"><a href="#" class="text-light">Minutely</a></li>
-                    <li class="breadcrumb-item"><a href="#" class="text-light">Hourly</a></li>
-                    <li class="breadcrumb-item"><a href="#" class="text-light">Daily</a></li>
-                </ol>
-            </nav>
-            <!--Breadcrumb-->
-            Exercitation ipsum minim aliquip duis dolore sunt Lorem. Labore qui veniam esse nisi voluptate. Laborum enim
-            ex aute anim esse velit cupidatat. Nulla consequat est commodo culpa velit amet labore esse labore ea
-            cupidatat.Minim occaecat esse id nulla amet sunt voluptate cupidatat dolore cupidatat. Ex aliqua cillum anim
-            sit dolore do labore aliqua dolore quis culpa. Elit ea mollit laborum dolor. Consectetur nulla qui Lorem sit
-            id ut cupidatat ad duis ex. Eu elit cillum dolor esse consectetur velit nulla eiusmod. Consequat cillum
-            veniam consequat duis.Cillum in ex magna ullamco qui proident sint. Veniam anim do esse consequat sit Lorem
-            ut. Aliquip qui culpa labore consectetur adipisicing laboris duis mollit nostrud enim dolor do excepteur.
-            Fugiat incididunt anim elit elit ut voluptate do sint magna adipisicing.Do laboris veniam labore sit ad
-            reprehenderit officia aliqua cupidatat reprehenderit incididunt culpa. Ad anim duis elit nostrud velit
-            excepteur adipisicing reprehenderit. Do incididunt do dolor qui elit Lorem amet sint. Amet est adipisicing
-            in sint enim culpa in culpa. Quis ut consectetur sunt elit ullamco non sunt.Minim Lorem ullamco duis
-            consequat ullamco labore velit aliqua aute deserunt eu excepteur deserunt pariatur. Esse consequat excepteur
-            laborum est amet reprehenderit do incididunt nisi ex. Est nulla duis commodo aute voluptate aliquip aliquip
-            aliqua.Cillum cillum culpa quis in. Veniam aliqua nostrud est excepteur exercitation eiusmod in adipisicing
-            duis sint dolor. Laborum ad ad id ex cillum eiusmod sint. Proident aute labore cillum adipisicing deserunt
-            dolore ullamco fugiat deserunt eiusmod deserunt consectetur incididunt labore. Culpa Lorem minim esse ex
-            veniam velit. Sunt duis veniam velit culpa velit nisi nulla dolor et deserunt laboris velit fugiat. Ipsum
-            sint proident excepteur nulla dolor est nostrud consectetur amet nulla proident quis duis eu.Ipsum nulla
-            enim sint non proident cupidatat commodo mollit esse commodo. Cillum nulla elit et elit nisi sunt sunt. Ex
-            consectetur mollit ipsum aute. Sint irure nulla dolor irure irure. Sint occaecat incididunt aute esse ipsum
-            amet ut mollit eu.Lorem sint occaecat tempor amet minim fugiat. Amet eu elit quis sit esse. Eu Lorem minim
-            duis in est quis cillum. Aliquip reprehenderit quis quis sunt. Duis pariatur occaecat sunt quis cillum anim
-            esse dolor est magna commodo cupidatat. Ipsum voluptate reprehenderit ipsum aliqua amet ea esse Lorem. Sunt
-            cillum culpa sit non minim reprehenderit magna ut tempor ullamco excepteur aliquip pariatur.Amet mollit
-            reprehenderit minim ipsum tempor aute exercitation deserunt amet ex quis. Ad laborum pariatur minim veniam
-            exercitation minim consectetur minim in enim veniam ex fugiat. Amet anim voluptate voluptate ex cillum
-            nostrud deserunt nisi laborum non culpa. Nisi anim ad magna laborum veniam officia velit proident enim
-            veniam.Magna sit excepteur eu dolore voluptate eu sint amet veniam. Id ea laboris ipsum nisi Lorem dolor
-            nulla. Laboris labore incididunt ipsum officia deserunt cupidatat voluptate excepteur duis esse magna enim
-            ex.Commodo sint id nulla dolore cupidatat. Velit exercitation Lorem ut exercitation ex veniam id esse.
-            Excepteur elit minim anim ullamco velit consectetur culpa. Nisi dolor occaecat occaecat id ex occaecat
-            voluptate pariatur cupidatat irure ad voluptate.Magna mollit nostrud enim aute magna sint nisi irure.
-            Proident nostrud exercitation velit anim fugiat. Tempor amet exercitation excepteur tempor dolore proident
-            esse quis laborum consectetur sint. Ullamco ea eu proident Lorem elit qui sit enim officia exercitation
-            laborum est commodo.Qui occaecat quis reprehenderit cupidatat ex amet dolor eu aute dolor laboris. Ut
-            exercitation commodo nulla quis consectetur ea sunt sint officia aliqua nulla ex. Non aliquip eu pariatur
-            nostrud qui qui culpa tempor. In ullamco adipisicing qui esse Lorem sit voluptate ipsum excepteur aliquip
-            excepteur exercitation sit consectetur. Laborum laboris pariatur nisi fugiat eiusmod deserunt in adipisicing
-            exercitation eiusmod occaecat voluptate do nulla. Commodo minim anim ad adipisicing deserunt aliquip non
-            elit fugiat dolor irure. Deserunt eu mollit velit irure elit nulla sint veniam tempor nisi reprehenderit
-            laboris.Sit et est culpa mollit amet laboris officia proident in sint duis. Consectetur non fugiat dolore
-            Lorem fugiat laborum. Velit id ullamco magna laborum do labore quis veniam aliquip.Minim nostrud mollit
-            culpa velit consequat consequat excepteur pariatur. Consectetur exercitation est aliquip pariatur nisi
-            excepteur ut do consectetur commodo. Aliquip do do esse veniam laborum veniam elit reprehenderit duis ex eu
-            sunt eu nostrud.Labore eu culpa minim incididunt commodo minim commodo. Sit eiusmod eiusmod irure laboris
-            incididunt ipsum adipisicing sint irure et quis. Nostrud dolore id irure do consectetur ut est laborum ex
-            officia anim minim excepteur eu. Do ea ad ex ea. Et nisi commodo ipsum nulla amet elit cillum enim eiusmod
-            ut do do ea commodo. Quis qui cillum sunt occaecat et reprehenderit id consectetur adipisicing in do sint
-            eu. Veniam consectetur sint occaecat exercitation laboris laboris id excepteur officia.</p>
-    </article>
-    <!--/Article-->
+        <!--Breadcrumb-->
+        <nav aria-label="breadcrumb" class="crumb" style="--bs-breadcrumb-divider:'';">
+            <ol class="breadcrumb crumb">
+                <li class="breadcrumb-item"><a href="#" class="text-light" id="now">Current Weather</a></li>
+                <li class="breadcrumb-item"><a href="#" class="text-light" id="min">Weather by the
+                        Minute</a></li>
+                <li class="breadcrumb-item"><a href="#" class="text-light" id="hour">Weather by the Hour</a>
+                </li>
+                <li class="breadcrumb-item"><a href="#" class="text-light" id="daily">Weather by the Day</a>
+                </li>
+            </ol>
+        </nav>
+        <!--/Breadcrumb-->
 
-        <!--Footer-->
+        <div class="container">
+            <div class="row">
+                <article class="col-lg-9">
+                    <section id="one">
+                        <p>Ullamco excepteur non officia in consequat ea occaecat voluptate adipisicing qui ea mollit.
+                            Ut esse minim ut pariatur officia id ullamco mollit enim elit pariatur id irure. Culpa
+                            veniam officia dolore sit laborum adipisicing eu labore eu nulla mollit. Officia commodo
+                            sint eiusmod ad exercitation tempor do. Amet ut fugiat amet laborum pariatur eu mollit
+                            consectetur sint duis mollit.</p>
+                    </section>
+                    <section id="two">
+                        <p>Ullamco excepteur non officia in consequat ea occaecat voluptate adipisicing qui ea mollit.
+                            Ut esse minim ut pariatur officia id ullamco mollit enim elit pariatur id irure. Culpa
+                            veniam officia dolore sit laborum adipisicing eu labore eu nulla mollit. Officia commodo
+                            sint eiusmod ad exercitation tempor do. Amet ut fugiat amet laborum pariatur eu mollit
+                            consectetur sint duis mollit.</p>
+                    </section>
+                    <section id="three">
+                        <p>Ullamco excepteur non officia in consequat ea occaecat voluptate adipisicing qui ea mollit.
+                            Ut esse minim ut pariatur officia id ullamco mollit enim elit pariatur id irure. Culpa
+                            veniam officia dolore sit laborum adipisicing eu labore eu nulla mollit. Officia commodo
+                            sint eiusmod ad exercitation tempor do. Amet ut fugiat amet laborum pariatur eu mollit
+                            consectetur sint duis mollit.</p>
+                    </section>
+                    <section id="four">
+                        <p>Ullamco excepteur non officia in consequat ea occaecat voluptate adipisicing qui ea mollit.
+                            Ut esse minim ut pariatur officia id ullamco mollit enim elit pariatur id irure. Culpa
+                            veniam officia dolore sit laborum adipisicing eu labore eu nulla mollit. Officia commodo
+                            sint eiusmod ad exercitation tempor do. Amet ut fugiat amet laborum pariatur eu mollit
+                            consectetur sint duis mollit.</p>
+                    </section>
+                    <section id="five">
+                        <p>Ullamco excepteur non officia in consequat ea occaecat voluptate adipisicing qui ea mollit.
+                            Ut esse minim ut pariatur officia id ullamco mollit enim elit pariatur id irure. Culpa
+                            veniam officia dolore sit laborum adipisicing eu labore eu nulla mollit. Officia commodo
+                            sint eiusmod ad exercitation tempor do. Amet ut fugiat amet laborum pariatur eu mollit
+                            consectetur sint duis mollit.</p>
+                    </section>
+                    <section id="six">
+                        <p>Ullamco excepteur non officia in consequat ea occaecat voluptate adipisicing qui ea mollit.
+                            Ut esse minim ut pariatur officia id ullamco mollit enim elit pariatur id irure. Culpa
+                            veniam officia dolore sit laborum adipisicing eu labore eu nulla mollit. Officia commodo
+                            sint eiusmod ad exercitation tempor do. Amet ut fugiat amet laborum pariatur eu mollit
+                            consectetur sint duis mollit.</p>
+                    </section>
+                    <section id="seven">
+                        <p>Ullamco excepteur non officia in consequat ea occaecat voluptate adipisicing qui ea mollit.
+                            Ut esse minim ut pariatur officia id ullamco mollit enim elit pariatur id irure. Culpa
+                            veniam officia dolore sit laborum adipisicing eu labore eu nulla mollit. Officia commodo
+                            sint eiusmod ad exercitation tempor do. Amet ut fugiat amet laborum pariatur eu mollit
+                            consectetur sint duis mollit.</p>
+                    </section>
+                </article>
+
+                <div class="col-lg-1"></div>
+
+                <aside class="col-lg-2" style="color: white;">
+                    <section id="eight">
+                        <p>Quis cillum ad sit Lorem sit deserunt Lorem reprehenderit pariatur.</p>
+                    </section>
+                    <section id="nine">
+                        <p>Mollit Lorem ut duis excepteur Lorem ipsum aliquip mollit.</p>
+                    </section>
+                    <section id="ten">
+                        <p>Nulla ex sit et Lorem eiusmod nostrud enim occaecat ut pariatur aliquip reprehenderit
+                            laborum.</p>
+                    </section>
+                </aside>
+            </div>
+        </div>
+    </main>
+    <!--/Main-->
+
+    <!--Footer-->
     <footer>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <nav class="navbar navbar-expand-lg navbar-dark " id="mainNav">
             <div class="container-fluid">
                 <a class="navbar-brand" style="font-size: 10px;" href="#">The Sun Guys (c) and all its affiliates are
                     protected with copyright and will not hesitate to sue if stolen from. Dont try us.</a>
@@ -156,16 +169,17 @@
                             <a class="nav-link active" href="#">Raw Weather Data</a>
                         </li>
                         <li>
-                            <a class="nav-link active" href="#">Raw Weather Data</a>
+                            <a class="nav-link active" href="#">Affiliates</a>
                         </li>
                     </ul>
                 </div>
         </nav>
     </footer>
-        <!--/Footer-->
+    <!--/Footer-->
 
-        <p id="buh"></p>
-        <p id="current"></p>
+    <p id="buh"></p>
+    <p id="current"></p>
 
-        <script src="script.js"></script>
+    <script src="script.js"></script>
+
 </html>
