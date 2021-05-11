@@ -90,10 +90,16 @@ main {
     border-radius: 7px;
 }
 
-button{
-    background-color: black;
+#searching{
+    background-color: $primary;
+    color: $light;
+    border: 2px solid $dark;
 
     &:hover{
-        background-color: black;
+        background-color: $dark;
     }
+}
+
+#searchBar{
+    border: 2px solid $dark;
 }
