@@ -1717,25 +1717,40 @@ daily.addEventListener("click", function () {
 if (page == 1) {
     const { lat: lat, lon: lon, timezone: tz, timezone_offset: tz_o, current: current, minutely: min, hourly: hour, daily: day } = weather;
 
-    let p = document.getElementById("buh");
-    // let section1 = document.getElementById("section1CMD");
-    // let section2 = document.getElementById("section2CMD");
-    // let section3 = document.getElementById("section3CMD");
+    let section1 = document.getElementById("one");
+    let section2 = document.getElementById("two");
+    let section3 = document.getElementById("three");
+    let section4 = document.getElementById("four");
+    let section5 = document.getElementById("five");
+    let section6 = document.getElementById("six");
+    let section7 = document.getElementById("seven");
+    let section8 = document.getElementById("eight");
+    let section9 = document.getElementById("nine");
+    let section10 = document.getElementById("ten");
+
 
     let superObj = weather;
 
-    createHeader(superObj);
-    // createSection1(superObj);
+    createSection1(superObj);
     // createSection2(superObj);
     // createSection3(superObj);
+    // createSection4(superObj);
+    // createSection5(superObj);
+    // createSection6(superObj);
+    // createSection7(superObj);
+    // createSection8(superObj);
+    // createSection9(superObj);
+    // createSection10(superObj);
 
-    function createHeader() {
+    function createSection1() {
         const H1 = document.createElement("h1");
-        H1.textContent = lat;
-        p.appendChild(H1);
+        H1.textContent = `Current State/Timezone: ${tz}`;
+        section1.appendChild(H1);
+        const br = document.createElement("br");
+        section1.appendChild(br);
         const PARA = document.createElement("p")
-        PARA.textContent = JSON.stringify(`lon: ${lon}, timezone: ${tz}, timezone_offset: ${tz_o}`)
-        p.appendChild(PARA);
+        PARA.textContent = JSON.stringify(`lattitude: ${lat}, longitude: ${lon}, timezone: ${tz}, timezone_offset: ${tz_o}`)
+        section1.appendChild(PARA);
     }
 
     // function createSection1(obj) {

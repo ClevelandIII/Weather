@@ -17,12 +17,8 @@ main {
 }
 
 #one, #two, #three, #four, #five, #six, #seven {
-  background-color: white;
+  background-color: #b3ffff;
   margin-bottom: 0.5%;
-}
-
-#yellow {
-  background-color: yellow;
 }
 
 .crumb {
