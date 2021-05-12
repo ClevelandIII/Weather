@@ -1703,9 +1703,6 @@ let loop3 = 1;
 now.addEventListener("click", function () {
     page = 1;
 })
-min.addEventListener("click", function () {
-    page = 2;
-})
 hour.addEventListener("click", function () {
     page = 3;
 })
@@ -1755,108 +1752,6 @@ if (page == 1) {
         let hey = new Date(1620014854)
         BIRTH.textContent = (`${hey.getHours()} || ${hey} || ${Date.parse(hey)}`)
         section1.appendChild(BIRTH);
-    }
-
-    // function createSection1(obj) {
-    //     const ABILITIES = obj["abilities"];
-
-    //     for (ability in ABILITIES) {
-    //         const ARTICLE = document.createElement("article")
-    //         const P1 = document.createElement("p")
-    //         const P2 = document.createElement("p")
-
-    //         P2.textContent = `ABILITY ${loop}`
-    //         loop++;
-
-    //         const ITEM = document.createElement("p");
-    //         ITEM.textContent = `name: ${ABILITIES[ability]["name"]}`
-    //         P2.appendChild(ITEM);
-
-    //         ARTICLE.appendChild(P1)
-    //         ARTICLE.appendChild(P2)
-    //         section1.appendChild(ARTICLE)
-    //     }
-    // }
-
-    // function createSection2(obj) {
-    //     const STATS = obj["stats"];
-
-    //     for (stat in STATS) {
-    //         const ARTICLE = document.createElement("article")
-    //         const P1 = document.createElement("p")
-    //         const P2 = document.createElement("p")
-    //         const P3 = document.createElement("p")
-    //         const BR = document.createElement("br")
-
-    //         P1.textContent = `Stat ${loop2}`
-    //         P2.textContent = `Base Stat: ${STATS[stat]["base_stat"]}, Effort: ${STATS[stat]["effort"]}`
-    //         loop2++;
-
-    //         const ESTATS = STATS[stat]["stat"];
-
-    //         const ITEM = document.createElement("p");
-    //         ITEM.textContent = `Stat: ${ESTATS["name"]}`
-    //         P3.appendChild(ITEM);
-
-    //         ARTICLE.appendChild(P1)
-    //         ARTICLE.appendChild(P2)
-    //         ARTICLE.appendChild(P3)
-    //         ARTICLE.appendChild(BR)
-
-    //         section2.appendChild(ARTICLE)
-    //     }
-    // }
-
-    // function createSection3(obj) {
-    //     const TYPES = obj["types"];
-
-    //     for (type in TYPES) {
-    //         const ARTICLE = document.createElement("article")
-    //         const P1 = document.createElement("p")
-    //         const P2 = document.createElement("p")
-    //         const P3 = document.createElement("p")
-
-    //         P1.textContent = `Type 1`
-    //         P2.textContent = `slot: ${TYPES[type]["slot"]}`
-
-    //         const NAME = TYPES[type]["type"];
-
-    //         const ITEM = document.createElement("p");
-    //         ITEM.textContent = `type: ${NAME["name"]}`
-    //         P3.appendChild(ITEM);
-
-    //         ARTICLE.appendChild(P1)
-    //         ARTICLE.appendChild(P2)
-    //         ARTICLE.appendChild(P3)
-
-    //         section3.appendChild(ARTICLE)
-    //     }
-    //}
-}
-
-//////////////////////////////////////////////////////////////////////Min
-if (page == 2) {
-    const { lat: lat, lon: lon, timezone: tz, timezone_offset: tz_o, current: current, minutely: min, hourly: hour, daily: day } = weather;
-
-    let p = document.getElementById("buh");
-    // let section1 = document.getElementById("section1CMD");
-    // let section2 = document.getElementById("section2CMD");
-    // let section3 = document.getElementById("section3CMD");
-
-    let superObj = weather;
-
-    createHeader(superObj);
-    // createSection1(superObj);
-    // createSection2(superObj);
-    // createSection3(superObj);
-
-    function createHeader() {
-        const H1 = document.createElement("h1");
-        H1.textContent = lat;
-        p.appendChild(H1);
-        const PARA = document.createElement("p")
-        PARA.textContent = JSON.stringify(`lon: ${lon}, timezone: ${tz}, timezone_offset: ${tz_o}`)
-        p.appendChild(PARA);
     }
 
     // function createSection1(obj) {
