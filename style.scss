@@ -30,6 +30,7 @@ $danger: $red;
 $light: $gray-100;
 $dark: $gray-900;
 
+
 #mainNav {
     margin-bottom: 0.3%;
     background-color: $primary;
@@ -59,7 +60,6 @@ main {
 }
 
 .crumb {
-    background-color: $primary;
     height: 2em;
     margin-bottom: 1%;
     a:link {
@@ -67,6 +67,7 @@ main {
     }
     margin-left: 8%;
     margin-right: 8%;
+    border-bottom: 2px solid $primary;
 }
 
 .text-light{
@@ -103,4 +104,22 @@ main {
 
 aside {
     color: white;
+}
+
+#move{
+    visibility: hidden;
+}
+
+@media (max-width: 768px) {
+    aside{
+        display: none;
+    }
+
+    .breadcrumb-item{
+        font-size: 15px;
+    }
+
+    #move{
+        display: none;
+    }
 }
