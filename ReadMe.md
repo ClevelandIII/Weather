@@ -68,6 +68,11 @@
 **Daily Interactions:** json   
 **Notable Changes:** json   
 
+**Commit Name on GitHub:** Sometimes it changes, but it should either be ClevelandIII or just Cleveland   
+**Problems you ran into today:** bootstrap coloring      
+**Daily Interactions:** json, main   
+**Notable Changes:** json, main   
+
 ---
 
 ## Developing - Jimmy
@@ -82,6 +87,11 @@
 **Daily Interactions:** footer and various other things  
 **Notable Changes:** footer and various other things  
 
+**Commit Name on GitHub:** Sidebat  
+**Problems you ran into today:** map formatting     
+**Daily Interactions:** map addition     
+**Notable Changes:** map     
+
 ---
 
 ## Developing - Jordan
@@ -95,6 +105,11 @@
 **Problems you ran into today:** background  
 **Daily Interactions:** background  
 **Notable Changes:** background  
+
+**Commit Name on GitHub:** Jslash101940  
+**Problems you ran into today:** portfolio  
+**Daily Interactions:** portfolio  
+**Notable Changes:** portfolio  
 
 # Testing
 

@@ -51,6 +51,11 @@ main {
 #one, #two, #three, #four, #five, #six, #seven {
     background-color: rgb(179, 255, 255);
     margin-bottom: 0.5%;
+    padding: 1%;
+}
+
+#eight, #nine, #ten {
+    margin-bottom: 2%;
 }
 
 .crumb {
@@ -66,10 +71,6 @@ main {
 
 .text-light{
     font-weight: bold;
-}
-
-#eight, #nine, #ten {
-    background-color: $primary;
 }
 
 ::-webkit-scrollbar {
@@ -98,4 +99,8 @@ main {
 
 #searchBar{
     border: 2px solid $dark;
+}
+
+aside {
+    color: white;
 }

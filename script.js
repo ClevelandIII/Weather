@@ -1750,7 +1750,11 @@ if (page == 1) {
         section1.appendChild(br);
         const PARA = document.createElement("p")
         PARA.textContent = JSON.stringify(`lattitude: ${lat}, longitude: ${lon}, timezone: ${tz}, timezone_offset: ${tz_o}`)
+        const BIRTH = document.createElement("p")
         section1.appendChild(PARA);
+        let hey = new Date(1620014854)
+        BIRTH.textContent = (`${hey.getHours()} || ${hey} || ${Date.parse(hey)}`)
+        section1.appendChild(BIRTH);
     }
 
     // function createSection1(obj) {
