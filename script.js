@@ -1748,7 +1748,6 @@ if (page == 1) {
         TEMP.textContent = JSON.stringify(`Current Temperature: ${temp} Degrees F/ ${Math.ceil((temp - 32) * 5/9)} Degrees C`)
         TTEMP.textContent = JSON.stringify(`Feels like ${ttemp}`)
         section1.appendChild(P);
-        section1.appendChild(DATE);
         section1.appendChild(TEMP);
         section1.appendChild(TTEMP);
 
