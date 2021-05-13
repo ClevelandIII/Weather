@@ -1713,7 +1713,7 @@ daily.addEventListener("click", function () {
 //////////////////////////////////////////////////////////////////////Current
 if (page == 1) {
     const { lat, lon, timezone: tz, timezone_offset: tz_o, current, minutely: min, hourly: hour, daily: day } = data;
-    const {temp} = current;
+    const {temp, feels_like: ttemp, humidity: humid, dew_point: dew, wind_speed: winds, wind_deg: windd} = current;
 
     let section1 = document.getElementById("one");
     let section2 = document.getElementById("two");
@@ -1741,12 +1741,35 @@ if (page == 1) {
     // createSection10(superObj);
 
     function createSection1() {
-        const H1 = document.createElement("h1")
-        const IMG = document.createElement("img")
-        IMG.src = "./img/Rhot.svg"
-        H1.textContent = JSON.stringify(`Current Temperature: ${temp} Degrees Farenheit`)
-        section1.appendChild(IMG);
-        section1.appendChild(H1);
+        const P = document.createElement("p")
+        const TEMP = document.createElement("H1")
+        const TTEMP = document.createElement("p")
+        P.textContent = (`CURRENT WEATHER`)
+        TEMP.textContent = JSON.stringify(`Current Temperature: ${temp} Degrees F/ ${Math.ceil((temp - 32) * 5/9)} Degrees C`)
+        TTEMP.textContent = JSON.stringify(`Feels like ${ttemp}`)
+        section1.appendChild(P);
+        section1.appendChild(DATE);
+        section1.appendChild(TEMP);
+        section1.appendChild(TTEMP);
+
+        const HR1 = document.createElement("hr")
+        const HR2 = document.createElement("hr")
+        const HR3 = document.createElement("hr")
+        const HUMID = document.createElement("p")
+        const DEW = document.createElement("p")
+        const WINDS = document.createElement("p")
+        const WINDD =  document.createElement("p")
+        HUMID.textContent = (`Humidity: ${humid}`)
+        DEW.textContent = (`Dew Point: ${dew}`)
+        WINDS.textContent = (`Wind Speed: ${winds}`)
+        WINDD.textContent = (`Wind Direction: ${windd}`)
+        section2.appendChild(HUMID);
+        section2.appendChild(HR1);
+        section2.appendChild(DEW);
+        section2.appendChild(HR2);
+        section2.appendChild(WINDS);
+        section2.appendChild(HR3);
+        section2.appendChild(WINDD);
     }
 
     // function createSection1(obj) {
