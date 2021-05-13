@@ -1852,7 +1852,7 @@ if (page == 3) {
         H1.textContent = lat;
         p.appendChild(H1);
         const PARA = document.createElement("p")
-        PARA.textContent = JSON.stringify(`lon: ${lon}, timezone: ${tz}, timezone_offset: ${tz_o}`)
+        PARA.textContent = JSON.stringify(`lon: ${lon}, timezone: ${tz}, timezone_offset: ${tz_o}, hourly${hour}`)
         p.appendChild(PARA);
     }
 
