@@ -8,8 +8,8 @@ let data = {
     "timezone_offset": -25200,
     "current": {
         "dt": 1620014854,
-        "sunrise": 1619959135,
-        "sunset": 1620007935,
+        "sunrise": "5: 29 AM",
+        "sunset": "7: 20 PM",
         "temp": 80.82,
         "feels_like": 78.91,
         "pressure": 1000,
@@ -1700,6 +1700,8 @@ let loop = 1;
 let loop2 = 1;
 let loop3 = 1;
 
+let dateData = new Date().toLocaleString();
+
 now.addEventListener("click", function () {
     page = 1;
 })
@@ -1713,7 +1715,8 @@ daily.addEventListener("click", function () {
 //////////////////////////////////////////////////////////////////////Current
 if (page == 1) {
     const { lat, lon, timezone: tz, timezone_offset: tz_o, current, minutely: min, hourly: hour, daily: day } = data;
-    const {temp, feels_like: ttemp, humidity: humid, dew_point: dew, wind_speed: winds, wind_deg: windd} = current;
+    const {temp, feels_like: ttemp, humidity: humid, dew_point: dew, wind_speed: winds, wind_deg: windd, weather, sunrise, sunset} = current;
+    const {id, main, description, icon} = weather;
 
     let section1 = document.getElementById("one");
     let section2 = document.getElementById("two");
@@ -1730,7 +1733,7 @@ if (page == 1) {
     let superObj = data;
 
     createSection1(superObj);
-    // createSection2(superObj);
+    createSection2(superObj);
     // createSection3(superObj);
     // createSection4(superObj);
     // createSection5(superObj);
@@ -1771,81 +1774,39 @@ if (page == 1) {
         section2.appendChild(WINDD);
     }
 
-    // function createSection1(obj) {
-    //     const ABILITIES = obj["abilities"];
+    function createSection2() {
+        const P = document.createElement("p")
+        const TZ = document.createElement("H1")
+        const SUNR = document.createElement("p")
+        const SUNS = document.createElement("p")
+        P.textContent = (`CURRENT TIME`)
+        TZ.textContent = (`Current Time: ${dateData}`)
+        SUNR.textContent = JSON.stringify(`Sunrise: ${sunrise}`)
+        SUNS.textContent = JSON.stringify(`Sunset: ${sunset}`)
+        section3.appendChild(P);
+        section3.appendChild(TZ);
+        section3.appendChild(SUNR);
+        section3.appendChild(SUNS);
 
-    //     for (ability in ABILITIES) {
-    //         const ARTICLE = document.createElement("article")
-    //         const P1 = document.createElement("p")
-    //         const P2 = document.createElement("p")
-
-    //         P2.textContent = `ABILITY ${loop}`
-    //         loop++;
-
-    //         const ITEM = document.createElement("p");
-    //         ITEM.textContent = `name: ${ABILITIES[ability]["name"]}`
-    //         P2.appendChild(ITEM);
-
-    //         ARTICLE.appendChild(P1)
-    //         ARTICLE.appendChild(P2)
-    //         section1.appendChild(ARTICLE)
-    //     }
-    // }
-
-    // function createSection2(obj) {
-    //     const STATS = obj["stats"];
-
-    //     for (stat in STATS) {
-    //         const ARTICLE = document.createElement("article")
-    //         const P1 = document.createElement("p")
-    //         const P2 = document.createElement("p")
-    //         const P3 = document.createElement("p")
-    //         const BR = document.createElement("br")
-
-    //         P1.textContent = `Stat ${loop2}`
-    //         P2.textContent = `Base Stat: ${STATS[stat]["base_stat"]}, Effort: ${STATS[stat]["effort"]}`
-    //         loop2++;
-
-    //         const ESTATS = STATS[stat]["stat"];
-
-    //         const ITEM = document.createElement("p");
-    //         ITEM.textContent = `Stat: ${ESTATS["name"]}`
-    //         P3.appendChild(ITEM);
-
-    //         ARTICLE.appendChild(P1)
-    //         ARTICLE.appendChild(P2)
-    //         ARTICLE.appendChild(P3)
-    //         ARTICLE.appendChild(BR)
-
-    //         section2.appendChild(ARTICLE)
-    //     }
-    // }
-
-    // function createSection3(obj) {
-    //     const TYPES = obj["types"];
-
-    //     for (type in TYPES) {
-    //         const ARTICLE = document.createElement("article")
-    //         const P1 = document.createElement("p")
-    //         const P2 = document.createElement("p")
-    //         const P3 = document.createElement("p")
-
-    //         P1.textContent = `Type 1`
-    //         P2.textContent = `slot: ${TYPES[type]["slot"]}`
-
-    //         const NAME = TYPES[type]["type"];
-
-    //         const ITEM = document.createElement("p");
-    //         ITEM.textContent = `type: ${NAME["name"]}`
-    //         P3.appendChild(ITEM);
-
-    //         ARTICLE.appendChild(P1)
-    //         ARTICLE.appendChild(P2)
-    //         ARTICLE.appendChild(P3)
-
-    //         section3.appendChild(ARTICLE)
-    //     }
-    //}
+        // const HR1 = document.createElement("hr")
+        // const HR2 = document.createElement("hr")
+        // const HR3 = document.createElement("hr")
+        // const HUMID = document.createElement("p")
+        // const DEW = document.createElement("p")
+        // const WINDS = document.createElement("p")
+        // const WINDD =  document.createElement("p")
+        // HUMID.textContent = (`Humidity: ${humid}`)
+        // DEW.textContent = (`Dew Point: ${dew}`)
+        // WINDS.textContent = (`Wind Speed: ${winds}`)
+        // WINDD.textContent = (`Wind Direction: ${windd}`)
+        // section2.appendChild(HUMID);
+        // section2.appendChild(HR1);
+        // section2.appendChild(DEW);
+        // section2.appendChild(HR2);
+        // section2.appendChild(WINDS);
+        // section2.appendChild(HR3);
+        // section2.appendChild(WINDD);
+    }
 }
 
 //////////////////////////////////////////////////////////////////////Hour
