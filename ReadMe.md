@@ -78,6 +78,11 @@
 **Daily Interactions:** json      
 **Notable Changes:** json     
 
+**Commit Name on GitHub:** Sometimes it changes, but it should either be ClevelandIII or just Cleveland   
+**Problems you ran into today:** json formatting for html and understanding json    
+**Daily Interactions:** json      
+**Notable Changes:** json     
+
 ---
 
 ## Developing - Jimmy
@@ -102,6 +107,11 @@
 **Daily Interactions:** ads     
 **Notable Changes:** ads     
 
+**Commit Name on GitHub:** Sidebat  
+**Problems you ran into today:** forming good ideas     
+**Daily Interactions:** ideas     
+**Notable Changes:** ideas     
+
 ---
 
 ## Developing - Jordan
@@ -115,6 +125,11 @@
 **Problems you ran into today:** background  
 **Daily Interactions:** background  
 **Notable Changes:** background  
+
+**Commit Name on GitHub:** Jslash101940  
+**Problems you ran into today:** portfolio  
+**Daily Interactions:** portfolio  
+**Notable Changes:** portfolio  
 
 **Commit Name on GitHub:** Jslash101940  
 **Problems you ran into today:** portfolio  
