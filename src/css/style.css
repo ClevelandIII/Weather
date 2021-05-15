@@ -16,13 +16,13 @@ main {
   border-radius: 5px;
 }
 
-#one, #two, #three, #four, #five, #six, #seven {
+#mainContent {
   background-color: #b3ffff;
   margin-bottom: 0.5%;
-  padding: 1%;
+  padding: .5%;
 }
 
-#eight, #nine, #ten {
+#eightt, #ninee, #tenn {
   margin-bottom: 2%;
 }
 
@@ -31,6 +31,7 @@ main {
   margin-bottom: 1%;
   margin-left: 8%;
   margin-right: 8%;
+  border-bottom: 2px solid #2c80ff;
 }
 
 .crumb a:link {
@@ -71,5 +72,26 @@ main {
 
 aside {
   color: white;
+}
+
+#move {
+  visibility: hidden;
+}
+
+@media (max-width: 768px) {
+  aside {
+    display: none;
+  }
+  .breadcrumb-item {
+    font-size: 15px;
+  }
+  #move {
+    display: none;
+  }
+}
+
+#no {
+  border: none;
+  background-color: rgba(95, 158, 160, 0);
 }
 /*# sourceMappingURL=style.css.map */
