@@ -74,6 +74,16 @@ main {
     border-bottom: 2px solid $primary;
 }
 
+.crumb2 {
+    height: 2em;
+    margin-bottom: 1%;
+    a:link {
+        text-decoration: none;
+    }
+    margin-left: 8%;
+    margin-right: 8%;
+}
+
 .text-light{
     font-weight: bold;
 }
