@@ -1,5 +1,4 @@
 #mainNav {
-  margin-bottom: 0.3%;
   background-color: #2c80ff;
 }
 
@@ -24,7 +23,10 @@ section {
 
 #less {
   background-color: rgba(0, 0, 0, 0);
-  background-color: black;
+}
+
+#less2 {
+  background-color: rgba(0, 0, 0, 0);
 }
 
 #eightt, #ninee, #tenn {

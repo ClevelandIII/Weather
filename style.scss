@@ -32,7 +32,6 @@ $dark: $gray-900;
 
 
 #mainNav {
-    margin-bottom: 0.3%;
     background-color: $primary;
 }
 
@@ -56,6 +55,10 @@ section{
 }
 
 #less{
+    background-color: rgba(0, 0, 0, 0);
+}
+
+#less2{
     background-color: rgba(0, 0, 0, 0);
 }
 // #one, #two, #three, #four, #five, #six, #seven, #eight, #nine, #ten, #eleven, #twelve, #thirteen, #fourteen{
