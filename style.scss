@@ -50,12 +50,15 @@ main {
     border-radius: 5px;
 }
 
-#mainContent{
+section{
     background-color: rgb(179, 255, 255);
     margin-bottom: 0.5%;
     padding: .5%;
 }
 
+#less{
+    background-color: rgba(0, 0, 0, 0);
+}
 // #one, #two, #three, #four, #five, #six, #seven, #eight, #nine, #ten, #eleven, #twelve, #thirteen, #fourteen{
 //     display: flex;
 // }
