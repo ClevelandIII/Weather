@@ -9,6 +9,7 @@ $green: #198754;
 $teal: #20c997;
 $cyan: #0dcaf0;
 
+
 $white: #fff;
 $gray-100: #f8f9fa;
 $gray-200: #e9ecef;
@@ -72,6 +73,16 @@ main {
     margin-left: 8%;
     margin-right: 8%;
     border-bottom: 2px solid $primary;
+}
+
+.crumb2 {
+    height: 2em;
+    margin-bottom: 1%;
+    a:link {
+        text-decoration: none;
+    }
+    margin-left: 8%;
+    margin-right: 8%;
 }
 
 .text-light{

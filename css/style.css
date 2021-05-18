@@ -38,6 +38,17 @@ main {
   text-decoration: none;
 }
 
+.crumb2 {
+  height: 2em;
+  margin-bottom: 1%;
+  margin-left: 8%;
+  margin-right: 8%;
+}
+
+.crumb2 a:link {
+  text-decoration: none;
+}
+
 .text-light {
   font-weight: bold;
 }
