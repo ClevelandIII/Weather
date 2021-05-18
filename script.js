@@ -1,7 +1,7 @@
 `use strict`
 
 let page = 1;
-let data = {
+let info = {
     "lat": 33.53,
     "lon": -112.18,
     "timezone": "America/Phoenix",
@@ -1700,18 +1700,39 @@ let loop = 1;
 let loop2 = 1;
 let loop3 = 1;
 
-let dateData = new Date().toLocaleString();
+let dateInfo = new Date().toLocaleString();
 
 function now() {
     page = 1;
+    loop = 1
     console.log(page)
 
     if (page == 1) {
-        const { lat, lon, timezone: tz, timezone_offset: tz_o, current, minutely: min, hourly: hour, daily: day } = data;
+        const { lat, lon, timezone: tz, timezone_offset: tz_o, current, minutely: min, hourly: hour, daily: day } = info;
         const { temp, feels_like: ttemp, humidity: humid, dew_point: dew, wind_speed: winds, wind_deg: windd, weather, sunrise, sunset, clouds, pressure } = current;
         const { id, main, description, icon } = weather;
         const { dt, precipitation } = min
-    
+
+        let sectio1 = document.getElementById("mainContent1");
+        sectio1.style.display = "block"
+        let sectio2 = document.getElementById("mainContent2");
+        sectio2.style.display = "block"
+        let sectio3 = document.getElementById("mainContent3");
+        sectio3.style.display = "block"
+        let sectio4 = document.getElementById("mainContent4");
+        sectio4.style.display = "block"
+        let sectio5 = document.getElementById("mainContent5");
+        sectio5.style.display = "block"
+        let sectio6 = document.getElementById("mainContent6");
+        sectio6.style.display = "block"
+        let sectio7 = document.getElementById("mainContent7");
+        sectio7.style.display = "block"
+        let sectio8 = document.getElementById("mainContent8");
+        sectio8.style.display = "block"
+        let sectio9 = document.getElementById("less");
+        sectio9.style.display = "none"
+        
+
         let section1 = document.getElementById("one");
         section1.innerHTML = "";
         let section2 = document.getElementById("two");
@@ -1736,22 +1757,22 @@ function now() {
         section11.innerHTML = "";
         let section12 = document.getElementById("tenny");
         section12.innerHTML = "";
-    
-        let superObj = data;
-    
+
+        let superObj = info;
+
         createSection1(superObj);
         createSection2(superObj);
         createSection3(superObj);
         createSection4(superObj);
         createSection5(superObj);
-    
+
         function createSection1() {
             const P = document.createElement("p")
             const TZ = document.createElement("H1")
             const SUNR = document.createElement("p")
             const SUNS = document.createElement("p")
             P.textContent = (`CURRENT TIME`)
-            TZ.textContent = (`Current Time: ${dateData}`)
+            TZ.textContent = (`Current Time: ${dateInfo}`)
             SUNR.textContent = JSON.stringify(`Sunrise: ${sunrise}`)
             SUNS.textContent = JSON.stringify(`Sunset: ${sunset}`)
             section1.appendChild(P);
@@ -1759,7 +1780,7 @@ function now() {
             section1.appendChild(SUNR);
             section1.appendChild(SUNS);
         }
-    
+
         function createSection2() {
             const P = document.createElement("p")
             const TEMP = document.createElement("H1")
@@ -1770,7 +1791,7 @@ function now() {
             section3.appendChild(P);
             section3.appendChild(TEMP);
             section3.appendChild(TTEMP);
-    
+
             const HR1 = document.createElement("hr")
             const HR2 = document.createElement("hr")
             const HR3 = document.createElement("hr")
@@ -1790,8 +1811,8 @@ function now() {
             section4.appendChild(HR3);
             section4.appendChild(WINDD);
         }
-    
-    
+
+
         function createSection3() {
             const P = document.createElement("p")
             const SKY = document.createElement("H1")
@@ -1802,7 +1823,7 @@ function now() {
             section5.appendChild(P);
             section5.appendChild(SKY);
             section5.appendChild(MAIND);
-    
+
             const CLOUD = document.createElement("p");
             const PRESSURE = document.createElement("p");
             const HR = document.createElement("hr");
@@ -1812,53 +1833,53 @@ function now() {
             section6.appendChild(HR)
             section6.appendChild(PRESSURE)
         }
-    
+
         function createSection4() {
             const P = document.createElement("p")
             P.textContent = (`5 - Minute Weather`)
             section11.appendChild(P)
-    
-            const FIVEMIN = data["minutely"];
-    
+
+            const FIVEMIN = info["minutely"];
+
             for (i = 0; i <= 4; i++) {
                 const DATETIME = document.createElement("p")
-    
+
                 DATETIME.textContent = `${loop} Minute/s after the current time`
                 loop++
-    
+
                 section7.appendChild(DATETIME)
             }
-    
+
             for (i = 0; i <= 4; i++) {
                 const PRECIP = document.createElement("p")
-    
+
                 PRECIP.textContent = `Precipitation: ${FIVEMIN[i]["precipitation"]}`
-    
+
                 section8.appendChild(PRECIP)
             }
         }
-    
+
         function createSection5() {
             const P = document.createElement("p")
             P.textContent = (`10 - Minute Weather`)
             section12.appendChild(P)
-    
-            const TENMIN = data["minutely"];
-    
+
+            const TENMIN = info["minutely"];
+
             for (i = 5; i <= 9; i++) {
                 const DATETIME = document.createElement("p")
-    
+
                 DATETIME.textContent = `${loop} Minute/s after the current time`
                 loop++
-    
+
                 section9.appendChild(DATETIME)
             }
-    
+
             for (i = 5; i <= 9; i++) {
                 const PRECIP = document.createElement("p")
-    
+
                 PRECIP.textContent = `Precipitation: ${TENMIN[i]["precipitation"]}`
-    
+
                 section10.appendChild(PRECIP)
             }
         }
@@ -1866,111 +1887,61 @@ function now() {
 }
 function hour() {
     page = 2;
+    loop2 = 1
     console.log(page)
 
     if (page == 2) {
-        const { lat, lon, timezone: tz, timezone_offset: tz_o, current, minutely: min, hourly: hour, daily: day } = data;
-        const { temp, feels_like: ttemp, humidity: humid, dew_point: dew, wind_speed: winds, wind_deg: windd, weather, sunrise, sunset } = current;
-        const { id, main, description, icon } = weather;
+        let section1 = document.getElementById("mainContent1");
+        section1.style.display = "none"
+        let section2 = document.getElementById("mainContent2");
+        section2.style.display = "none"
+        let section3 = document.getElementById("mainContent3");
+        section3.style.display = "none"
+        let section4 = document.getElementById("mainContent4");
+        section4.style.display = "none"
+        let section5 = document.getElementById("mainContent5");
+        section5.style.display = "none"
+        let section6 = document.getElementById("mainContent6");
+        section6.style.display = "none"
+        let section7 = document.getElementById("mainContent7");
+        section7.style.display = "none"
+        let section8 = document.getElementById("mainContent8");
+        section8.style.display = "none"
+        let sectionI = document.getElementById("less");
+        sectionI.style.display = "block"
 
-        let section1 = document.getElementById("one");
-        section1.innerHTML = "";
-        let section2 = document.getElementById("two");
-        section2.innerHTML = "";
-        let section3 = document.getElementById("three");
-        section3.innerHTML = "";
-        let section4 = document.getElementById("four");
-        section4.innerHTML = "";
-        let section5 = document.getElementById("five");
-        section5.innerHTML = "";
-        let section6 = document.getElementById("six");
-        section6.innerHTML = "";
-        let section7 = document.getElementById("seven");
-        section7.innerHTML = "";
-        let section8 = document.getElementById("eight");
-        section8.innerHTML = "";
-        let section9 = document.getElementById("nine");
-        section9.innerHTML = "";
-        let section10 = document.getElementById("ten");
-        section10.innerHTML = "";
-
-
-        let superObj = data;
+        let superObj = info;
 
         createSection1(superObj);
-        createSection2(superObj);
+        // createSection2(superObj);
         // createSection3(superObj);
         // createSection4(superObj);
         // createSection5(superObj);
-        // createSection6(superObj);
-        // createSection7(superObj);
-        // createSection8(superObj);
-        // createSection9(superObj);
-        // createSection10(superObj);
 
         function createSection1() {
             const P = document.createElement("p")
-            const TEMP = document.createElement("H1")
-            const TTEMP = document.createElement("p")
-            P.textContent = (`CURRENT WEATHER`)
-            TEMP.textContent = JSON.stringify(`Current Temperature: ${temp} Degrees F/ ${Math.ceil((temp - 32) * 5 / 9)} Degrees C`)
-            TTEMP.textContent = JSON.stringify(`Feels like ${ttemp}`)
-            section1.appendChild(P);
-            section1.appendChild(TEMP);
-            section1.appendChild(TTEMP);
+            P.textContent = (`Hourly Weather`)
 
-            const HR1 = document.createElement("hr")
-            const HR2 = document.createElement("hr")
-            const HR3 = document.createElement("hr")
-            const HUMID = document.createElement("p")
-            const DEW = document.createElement("p")
-            const WINDS = document.createElement("p")
-            const WINDD = document.createElement("p")
-            HUMID.textContent = (`Humidity: ${humid}`)
-            DEW.textContent = (`Dew Point: ${dew}`)
-            WINDS.textContent = (`Wind Speed: ${winds}`)
-            WINDD.textContent = (`Wind Direction: ${windd}`)
-            section2.appendChild(HUMID);
-            section2.appendChild(HR1);
-            section2.appendChild(DEW);
-            section2.appendChild(HR2);
-            section2.appendChild(WINDS);
-            section2.appendChild(HR3);
-            section2.appendChild(WINDD);
-        }
+            const HOUR = info["hourly"];
 
-        function createSection2() {
-            const P = document.createElement("p")
-            const TZ = document.createElement("H1")
-            const SUNR = document.createElement("p")
-            const SUNS = document.createElement("p")
-            P.textContent = (`CURRENT TIME`)
-            TZ.textContent = (`Current Time: ${dateData}`)
-            SUNR.textContent = JSON.stringify(`Sunrise: ${sunrise}`)
-            SUNS.textContent = JSON.stringify(`Sunset: ${sunset}`)
-            section3.appendChild(P);
-            section3.appendChild(TZ);
-            section3.appendChild(SUNR);
-            section3.appendChild(SUNS);
+            for (i = 0; i <= 24; i++) {
+                const MAIN = document.createElement("section")
+                const DATETIME = document.createElement("p")
+                const TEMP = document.createElement("p")
+                const FTEMP = document.createElement("p")
 
-            // const HR1 = document.createElement("hr")
-            // const HR2 = document.createElement("hr")
-            // const HR3 = document.createElement("hr")
-            // const HUMID = document.createElement("p")
-            // const DEW = document.createElement("p")
-            // const WINDS = document.createElement("p")
-            // const WINDD =  document.createElement("p")
-            // HUMID.textContent = (`Humidity: ${humid}`)
-            // DEW.textContent = (`Dew Point: ${dew}`)
-            // WINDS.textContent = (`Wind Speed: ${winds}`)
-            // WINDD.textContent = (`Wind Direction: ${windd}`)
-            // section2.appendChild(HUMID);
-            // section2.appendChild(HR1);
-            // section2.appendChild(DEW);
-            // section2.appendChild(HR2);
-            // section2.appendChild(WINDS);
-            // section2.appendChild(HR3);
-            // section2.appendChild(WINDD);
+                DATETIME.textContent = `${loop2} Hour/s after the current time`
+                TEMP.textContent = `Temperature: ${HOUR[i]["temp"]}`
+                FTEMP.textContent = `Feels Like: ${HOUR[i]["feels_like"]}`
+
+                loop2++
+
+                MAIN.appendChild(DATETIME)
+                MAIN.appendChild(TEMP)
+                MAIN.appendChild(FTEMP)
+
+                sectionI.appendChild(MAIN)
+            }
         }
     }
 }
@@ -1979,7 +1950,7 @@ function day() {
     console.log(page)
 
     if (page == 3) {
-        const { lat, lon, timezone: tz, timezone_offset: tz_o, current, minutely: min, hourly: hour, daily: day } = data;
+        const { lat, lon, timezone: tz, timezone_offset: tz_o, current, minutely: min, hourly: hour, daily: day } = info;
         const { temp, feels_like: ttemp, humidity: humid, dew_point: dew, wind_speed: winds, wind_deg: windd, weather, sunrise, sunset } = current;
         const { id, main, description, icon } = weather;
 
@@ -2005,7 +1976,7 @@ function day() {
         section10.innerHTML = "";
 
 
-        let superObj = data;
+        let superObj = info;
 
         createSection1(superObj);
         createSection2(superObj);
@@ -2055,7 +2026,7 @@ function day() {
             const SUNR = document.createElement("p")
             const SUNS = document.createElement("p")
             P.textContent = (`CURRENT TIME`)
-            TZ.textContent = (`Current Time: ${dateData}`)
+            TZ.textContent = (`Current Time: ${dateInfo}`)
             SUNR.textContent = JSON.stringify(`Sunrise: ${sunrise}`)
             SUNS.textContent = JSON.stringify(`Sunset: ${sunset}`)
             section3.appendChild(P);
@@ -2086,7 +2057,7 @@ function day() {
 }
 
 if (page == 1) {
-    const { lat, lon, timezone: tz, timezone_offset: tz_o, current, minutely: min, hourly: hour, daily: day } = data;
+    const { lat, lon, timezone: tz, timezone_offset: tz_o, current, minutely: min, hourly: hour, daily: day } = info;
     const { temp, feels_like: ttemp, humidity: humid, dew_point: dew, wind_speed: winds, wind_deg: windd, weather, sunrise, sunset, clouds, pressure } = current;
     const { id, main, description, icon } = weather;
     const { dt, precipitation } = min
@@ -2116,7 +2087,7 @@ if (page == 1) {
     let section12 = document.getElementById("tenny");
     section12.innerHTML = "";
 
-    let superObj = data;
+    let superObj = info;
 
     createSection1(superObj);
     createSection2(superObj);
@@ -2130,7 +2101,7 @@ if (page == 1) {
         const SUNR = document.createElement("p")
         const SUNS = document.createElement("p")
         P.textContent = (`CURRENT TIME`)
-        TZ.textContent = (`Current Time: ${dateData}`)
+        TZ.textContent = (`Current Time: ${dateInfo}`)
         SUNR.textContent = JSON.stringify(`Sunrise: ${sunrise}`)
         SUNS.textContent = JSON.stringify(`Sunset: ${sunset}`)
         section1.appendChild(P);
@@ -2197,7 +2168,7 @@ if (page == 1) {
         P.textContent = (`5 - Minute Weather`)
         section11.appendChild(P)
 
-        const FIVEMIN = data["minutely"];
+        const FIVEMIN = info["minutely"];
 
         for (i = 0; i <= 4; i++) {
             const DATETIME = document.createElement("p")
@@ -2222,7 +2193,7 @@ if (page == 1) {
         P.textContent = (`10 - Minute Weather`)
         section12.appendChild(P)
 
-        const TENMIN = data["minutely"];
+        const TENMIN = info["minutely"];
 
         for (i = 5; i <= 9; i++) {
             const DATETIME = document.createElement("p")

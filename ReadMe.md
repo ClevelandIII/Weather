@@ -56,30 +56,34 @@
 
 ---
 
-## Developing - Cleveland
-
-**Commit Name on GitHub:** Sometimes it changes, but it should either be ClevelandIII or just Cleveland   
+## Cleveland
+**Commit name on Github:** Sometimes it changes, but it should either be ClevelandIII or just Cleveland   
 **Problems you ran into today:** filler and header   
 **Daily Interactions:** filler and header   
 **Notable Changes:** filler and header   
 
-**Commit Name on GitHub:** Sometimes it changes, but it should either be ClevelandIII or just Cleveland   
+**Date:** 5/7/2021   
 **Problems you ran into today:** base filler page formatting   
 **Daily Interactions:** json   
 **Notable Changes:** json   
 
-**Commit Name on GitHub:** Sometimes it changes, but it should either be ClevelandIII or just Cleveland   
+**Date:** 5/10/2021   
 **Problems you ran into today:** bootstrap coloring      
 **Daily Interactions:** json, main   
 **Notable Changes:** json, main   
 
-**Commit Name on GitHub:** Sometimes it changes, but it should either be ClevelandIII or just Cleveland   
+**Date:** 5/11/2021   
 **Problems you ran into today:** bootstrap and json struggles    
 **Daily Interactions:** json      
 **Notable Changes:** json     
 
-**Commit Name on GitHub:** Sometimes it changes, but it should either be ClevelandIII or just Cleveland   
+**Date:** 5/12/2021   
 **Problems you ran into today:** json formatting for html and understanding json    
+**Daily Interactions:** json      
+**Notable Changes:** json     
+
+**Date:** 5/14/2021   
+**Problems you ran into today:** chartjs initialization    
 **Daily Interactions:** json      
 **Notable Changes:** json     
 
@@ -121,22 +125,27 @@
 **Daily Interactions:** portfolio  
 **Notable Changes:** portfolio  
 
-**Commit Name on GitHub:** Jslash101940  
+**Date:** 5/14/2021   
 **Problems you ran into today:** background  
 **Daily Interactions:** background  
 **Notable Changes:** background  
 
-**Commit Name on GitHub:** Jslash101940  
+**Date:** 5/14/2021   
 **Problems you ran into today:** portfolio  
 **Daily Interactions:** portfolio  
 **Notable Changes:** portfolio  
 
-**Commit Name on GitHub:** Jslash101940  
+**Date:** 5/11/2021   
 **Problems you ran into today:** portfolio  
 **Daily Interactions:** portfolio  
 **Notable Changes:** portfolio  
 
-**Commit Name on GitHub:** Jslash101940  
+**Date:** 5/12/2021   
+**Problems you ran into today:** portfolio  
+**Daily Interactions:** portfolio  
+**Notable Changes:** portfolio  
+
+**Date:** 5/14/2021   
 **Problems you ran into today:** portfolio  
 **Daily Interactions:** portfolio  
 **Notable Changes:** portfolio  

@@ -16,10 +16,15 @@ main {
   border-radius: 5px;
 }
 
-#mainContent {
+section {
   background-color: #b3ffff;
   margin-bottom: 0.5%;
   padding: .5%;
+}
+
+#less {
+  background-color: rgba(0, 0, 0, 0);
+  background-color: black;
 }
 
 #eightt, #ninee, #tenn {
