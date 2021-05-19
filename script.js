@@ -1699,7 +1699,7 @@ let info = {
 let loop = 1;
 let loop2 = 1;
 let loop3 = 1;
-let array = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+let array = ["Today", "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
 
 let dateInfo = new Date().toLocaleString();
 
@@ -1728,13 +1728,17 @@ function now() {
         sectio6.style.display = "block"
         let sectio7 = document.getElementById("mainContent7");
         sectio7.style.display = "block"
-        let sectio8 = document.getElementById("mainContent8");
-        sectio8.style.display = "block"
+        let mino = document.getElementById("mainContentM");
+        mino.style.display = "none"
+        let mino2 = document.getElementById("mainContentH");
+        mino2.style.display = "none"
+        let mino3 = document.getElementById("mainContentD");
+        mino3.style.display = "none"
         let sectionI = document.getElementById("less");
         sectionI.style.display = "none"
         let sectionI2 = document.getElementById("less2");
         sectionI2.style.display = "none"
-        
+
 
         let section1 = document.getElementById("one");
         section1.innerHTML = "";
@@ -1905,10 +1909,21 @@ function hour() {
         section4.style.display = "none"
         let section5 = document.getElementById("mainContent5");
         section5.style.display = "none"
+        let section6 = document.getElementById("mainContent6");
+        section6.style.display = "block"
+        let section7 = document.getElementById("mainContent7");
+        section7.style.display = "block"
+        let mino = document.getElementById("mainContentM");
+        mino.style.display = "none"
+        let mino2 = document.getElementById("mainContentH");
+        mino2.style.display = "none"
+        let mino3 = document.getElementById("mainContentD");
+        mino3.style.display = "none"
         let sectionI = document.getElementById("less");
         sectionI.style.display = "block"
         let sectionI2 = document.getElementById("less2");
         sectionI2.style.display = "none"
+        sectionI.innerHTML = ""
 
         let superObj = info;
 
@@ -1962,18 +1977,25 @@ function day() {
         section4.style.display = "none"
         let section5 = document.getElementById("mainContent5");
         section5.style.display = "none"
+        let section6 = document.getElementById("mainContent6");
+        section6.style.display = "block"
+        let section7 = document.getElementById("mainContent7");
+        section7.style.display = "block"
+        let mino = document.getElementById("mainContentM");
+        mino.style.display = "none"
+        let mino2 = document.getElementById("mainContentH");
+        mino2.style.display = "none"
+        let mino3 = document.getElementById("mainContentD");
+        mino3.style.display = "none"
         let sectionI = document.getElementById("less");
         sectionI.style.display = "none"
         let sectionI2 = document.getElementById("less2");
         sectionI2.style.display = "block"
+        sectionI2.innerHTML = ""
 
         let superObj = info;
 
         createSection1(superObj);
-        // createSection2(superObj);
-        // createSection3(superObj);
-        // createSection4(superObj);
-        // createSection5(superObj);
 
         function createSection1() {
             const P = document.createElement("p")
@@ -1981,7 +2003,8 @@ function day() {
 
             const DAY = info["daily"];
 
-            for (i=0; i <= 7; i++) {
+            for (i in DAY) {
+                console.log(i)
                 const MAIN = document.createElement("section")
                 const DATETIME = document.createElement("p")
                 const TEMP = document.createElement("p")
@@ -2004,6 +2027,38 @@ function day() {
         }
     }
 }
+function graph() {
+    page = 4;
+
+    console.log(page)
+
+    if (page == 4) {
+        let section1 = document.getElementById("mainContent1");
+        section1.style.display = "none"
+        let section2 = document.getElementById("mainContent2");
+        section2.style.display = "none"
+        let section3 = document.getElementById("mainContent3");
+        section3.style.display = "none"
+        let section4 = document.getElementById("mainContent4");
+        section4.style.display = "none"
+        let section5 = document.getElementById("mainContent5");
+        section5.style.display = "none"
+        let section6 = document.getElementById("mainContent6");
+        section6.style.display = "block"
+        let section7 = document.getElementById("mainContent7");
+        section7.style.display = "block"
+        let mino = document.getElementById("mainContentM");
+        mino.style.display = "block"
+        let mino2 = document.getElementById("mainContentH");
+        mino2.style.display = "block"
+        let mino3 = document.getElementById("mainContentD");
+        mino3.style.display = "block"
+        let sectionI = document.getElementById("less");
+        sectionI.style.display = "none"
+        let sectionI2 = document.getElementById("less2");
+        sectionI2.style.display = "none"
+    }
+}
 
 if (page == 1) {
     const { lat, lon, timezone: tz, timezone_offset: tz_o, current, minutely: min, hourly: hour, daily: day } = info;
@@ -2011,10 +2066,31 @@ if (page == 1) {
     const { id, main, description, icon } = weather;
     const { dt, precipitation } = min
 
+    let sectio1 = document.getElementById("mainContent1");
+    sectio1.style.display = "block"
+    let sectio2 = document.getElementById("mainContent2");
+    sectio2.style.display = "block"
+    let sectio3 = document.getElementById("mainContent3");
+    sectio3.style.display = "block"
+    let sectio4 = document.getElementById("mainContent4");
+    sectio4.style.display = "block"
+    let sectio5 = document.getElementById("mainContent5");
+    sectio5.style.display = "block"
+    let sectio6 = document.getElementById("mainContent6");
+    sectio6.style.display = "block"
+    let sectio7 = document.getElementById("mainContent7");
+    sectio7.style.display = "block"
+    let mino = document.getElementById("mainContentM");
+    mino.style.display = "none"
+    let mino2 = document.getElementById("mainContentH");
+    mino2.style.display = "none"
+    let mino3 = document.getElementById("mainContentD");
+    mino3.style.display = "none"
     let sectionI = document.getElementById("less");
     sectionI.style.display = "none"
     let sectionI2 = document.getElementById("less2");
     sectionI2.style.display = "none"
+
 
     let section1 = document.getElementById("one");
     section1.innerHTML = "";
@@ -2054,6 +2130,7 @@ if (page == 1) {
         const TZ = document.createElement("H1")
         const SUNR = document.createElement("p")
         const SUNS = document.createElement("p")
+        // const IMG = documet.createElement("img")
         P.textContent = (`CURRENT TIME`)
         TZ.textContent = (`Current Time: ${dateInfo}`)
         SUNR.textContent = JSON.stringify(`Sunrise: ${sunrise}`)
@@ -2168,14 +2245,18 @@ if (page == 1) {
     }
 }
 
-home.addEventListener("mousemove", function(){
+home.addEventListener("mousemove", function () {
     now();
 })
 
-hourHome.addEventListener("mousemove", function(){
+hourHome.addEventListener("mousemove", function () {
     hour();
 })
 
-dayHome.addEventListener("mousemove", function(){
+dayHome.addEventListener("mousemove", function () {
     day();
+})
+
+graphHome.addEventListener("mousemove", function () {
+    graph();
 })

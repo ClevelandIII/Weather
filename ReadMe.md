@@ -94,6 +94,11 @@
 **Daily Interactions:** daily and hourly are "done"      
 **Notable Changes:** base site formation     
 
+**Date:** 5/18/2021   
+**Problems you ran into today:** chartjs    
+**Daily Interactions:** small little design additions      
+**Notable Changes:** daily bug fixed     
+
 ---
 
 ## Developing - Jimmy
@@ -135,6 +140,12 @@
 **Daily Interactions:** chartjs     
 **Notable Changes:** "finalized" chart     
 
+
+**Date:** 5/17/2021   
+**Problems you ran into today:** not here     
+**Daily Interactions:** not here     
+**Notable Changes:** not here     
+
 ---
 
 ## Developing - Jordan
@@ -172,6 +183,11 @@
 **Notable Changes:** portfolio  
 
 **Date:** 5/17/2021   
+**Problems you ran into today:** portfolio  
+**Daily Interactions:** portfolio  
+**Notable Changes:** portfolio  
+
+**Date:** 5/18/2021   
 **Problems you ran into today:** portfolio  
 **Daily Interactions:** portfolio  
 **Notable Changes:** portfolio  
