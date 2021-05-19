@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="./img/sun.svg" type="image/x-icon">
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 
 <body>
@@ -38,10 +39,13 @@
                         <a class="nav-link active" aria-current="page" id="home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" id="hourHome">Weather by the Hour</a>
+                        <a class="nav-link active" aria-current="page" id="hourHome">Hourly</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" id="dayHome">Weather by the Day</a>
+                        <a class="nav-link active" aria-current="page" id="dayHome">Daily</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" id="graphHome">Graphics</a>
                     </li>
                 </ul>
                 <form class="d-flex">
@@ -68,6 +72,9 @@
                 </li>
                 <li class="breadcrumb-item"><button class="text-light" id="no" onclick="day()">Weather by the
                         Day</button>
+                </li>
+                <li class="breadcrumb-item"><button class="text-light" id="no" onclick="graph()">Comparison
+                        Graphics</button>
                 </li>
             </ol>
         </nav>
@@ -126,72 +133,174 @@
                             </div>
                         </div>
                     </section>
-                    <section id="mainContent6">
+                    <section id="mainContentM">
                         <div>
-                            <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
-                            <div>
-                                <canvas id="myChart"></canvas>
-                            </div>
-
-                            <script>
-                                const labels = [
-                                    '1',
-                                    '2',
-                                    '3',
-                                    '4',
-                                    '5',
-                                    '6',
-                                    '7',
-                                    '8',
-                                    '9',
-                                    '10',
-                                    '11',
-                                    '12',
-                                    '13',
-                                    '14',
-                                    '15',
-                                    '16',
-                                    '17',
-                                    '18',
-                                    '19',
-                                    '20',
-                                    '21',
-                                    '22',
-                                    '23',
-                                    '24',
-                                    '25',
-                                ];
-                                const data = {
-                                    labels: labels,
-                                    datasets: [{
-                                        label: 'Temparuture',
-                                        backgroundColor: 'rgb(0, 0, 0)',
-                                        borderColor: 'rgb(255, 255, 0)',
-                                        data: [80, 80, 79, 77, 74, 71, 70, 69, 68, 67, 67, 68, 70, 73, 75, 77, 80, 82, 84, 86, 87, 88, 86, 84, 82,],
-                                        data2: [10, 200, 79, 77, 74, 71, 70, 69, 68, 67, 67, 68, 70, 73, 75, 77, 80, 82, 84, 86, 87, 88, 86, 84, 82,]
-                                    }]
-                                };
-
-                                const config = {
-                                    type: 'line',
-                                    data,
-                                    options: {}
-                                };
-
-                                var myChart = new Chart(
-                                    document.getElementById('myChart'),
-                                    config
-                                );
-                            </script>
+                            <canvas id="myChart"></canvas>
                         </div>
+
+                        <script>
+                            const labels = [
+                                '1',
+                                '2',
+                                '3',
+                                '4',
+                                '5',
+                                '6',
+                                '7',
+                                '8',
+                                '9',
+                                '10',
+                                '11',
+                                '12',
+                                '13',
+                                '14',
+                                '15',
+                                '16',
+                                '17',
+                                '18',
+                                '19',
+                                '20',
+                                '21',
+                                '22',
+                                '23',
+                                '24',
+                                '25',
+                            ];
+                            const data = {
+                                labels: labels,
+                                datasets: [{
+                                    label: 'Temparuture',
+                                    backgroundColor: 'rgb(0, 0, 0)',
+                                    borderColor: 'rgb(255, 255, 0)',
+                                    data: [80, 80, 79, 77, 74, 71, 70, 69, 68, 67, 67, 68, 70, 73, 75, 77, 80, 82, 84, 86, 87, 88, 86, 84, 82,],
+                                    data2: [10, 200, 79, 77, 74, 71, 70, 69, 68, 67, 67, 68, 70, 73, 75, 77, 80, 82, 84, 86, 87, 88, 86, 84, 82,]
+                                }]
+                            };
+                            const config = {
+                                type: 'line',
+                                data,
+                                options: {}
+                            };
+                            var myChart = new Chart(
+                                document.getElementById('myChart'),
+                                config
+                            );
+                        </script>
                     </section>
-                    <section id="mainContent7">
+                    <section id="mainContentH">
+                        <div>
+                            <canvas id="myChart2"></canvas>
+                        </div>
+
+                        <script>
+                            const labelss = [
+                                '1',
+                                '2',
+                                '3',
+                                '4',
+                                '5',
+                                '6',
+                                '7',
+                                '8',
+                                '9',
+                                '10',
+                                '11',
+                                '12',
+                                '13',
+                                '14',
+                                '15',
+                                '16',
+                                '17',
+                                '18',
+                                '19',
+                                '20',
+                                '21',
+                                '22',
+                                '23',
+                                '24',
+                                '25',
+                            ];
+                            const dataa = {
+                                labels: labelss,
+                                datasets: [{
+                                    label: 'Temparuture',
+                                    backgroundColor: 'rgb(0, 0, 0)',
+                                    borderColor: 'rgb(255, 255, 0)',
+                                    data: [80, 80, 79, 77, 74, 71, 70, 69, 68, 67, 67, 68, 70, 73, 75, 77, 80, 82, 84, 86, 87, 88, 86, 84, 82,],
+                                    data2: [10, 200, 79, 77, 74, 71, 70, 69, 68, 67, 67, 68, 70, 73, 75, 77, 80, 82, 84, 86, 87, 88, 86, 84, 82,]
+                                }]
+                            };
+                            const configg = {
+                                type: 'line',
+                                data,
+                                options: {}
+                            };
+                            var myChart = new Chart(
+                                document.getElementById('myChart2'),
+                                configg
+                            );
+                        </script>
+                    </section>
+                    <section id="mainContentD">
+                        <div>
+                            <canvas id="myChart3"></canvas>
+                        </div>
+
+                        <script>
+                            const labelsss = [
+                                '1',
+                                '2',
+                                '3',
+                                '4',
+                                '5',
+                                '6',
+                                '7',
+                                '8',
+                                '9',
+                                '10',
+                                '11',
+                                '12',
+                                '13',
+                                '14',
+                                '15',
+                                '16',
+                                '17',
+                                '18',
+                                '19',
+                                '20',
+                                '21',
+                                '22',
+                                '23',
+                                '24',
+                                '25',
+                            ];
+                            const dataaa = {
+                                labels: labelsss,
+                                datasets: [{
+                                    label: 'Temparuture',
+                                    backgroundColor: 'rgb(0, 0, 0)',
+                                    borderColor: 'rgb(255, 255, 0)',
+                                    data: [80, 80, 79, 77, 74, 71, 70, 69, 68, 67, 67, 68, 70, 73, 75, 77, 80, 82, 84, 86, 87, 88, 86, 84, 82,],
+                                    data2: [10, 200, 79, 77, 74, 71, 70, 69, 68, 67, 67, 68, 70, 73, 75, 77, 80, 82, 84, 86, 87, 88, 86, 84, 82,]
+                                }]
+                            };
+                            const configgg = {
+                                type: 'line',
+                                data,
+                                options: {}
+                            };
+                            var myChart = new Chart(
+                                document.getElementById('myChart3'),
+                                configgg
+                            );
+                        </script>
+                    </section>
+                    <section id="mainContent6">
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d53212.92565730154!2d-112.17920066947619!3d33.53238102994424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1620696089909!5m2!1sen!2sus"
                             width="100%" height="100%"></iframe>
                     </section>
-                    <section id="mainContent8">
+                    <section id="mainContent7">
                         <!--Breadcrumb-->
                         <nav aria-label="breadcrumb" class="crumb2" style="--bs-breadcrumb-divider:'';">
                             <ol class="breadcrumb crumb2">
