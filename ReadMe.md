@@ -57,7 +57,9 @@
 ---
 
 ## Cleveland
-**Commit name on Github:** Sometimes it changes, but it should either be ClevelandIII or just Cleveland   
+**Commit name on Github:** Sometimes it changes, but it should either be ClevelandIII or just Cleveland  
+
+**Date:** 5/6/2021   
 **Problems you ran into today:** filler and header   
 **Daily Interactions:** filler and header   
 **Notable Changes:** filler and header   
@@ -87,50 +89,69 @@
 **Daily Interactions:** json      
 **Notable Changes:** json     
 
+**Date:** 5/17/2021   
+**Problems you ran into today:** chartjs    
+**Daily Interactions:** daily and hourly are "done"      
+**Notable Changes:** base site formation     
+
 ---
 
 ## Developing - Jimmy
 
 **Commit Name on GitHub:** Sidebat   
+
+**Date:** 5/6/2021   
 **Problems you ran into today:** formatting  
 **Daily Interactions:** breadcrumb  
 **Notable Changes:** breadcrumb  
 
-**Commit Name on GitHub:** Sidebat  
+**Date:** 5/7/2021   
 **Problems you ran into today:** finalization  
 **Daily Interactions:** footer and various other things  
 **Notable Changes:** footer and various other things  
 
-**Commit Name on GitHub:** Sidebat  
+**Date:** 5/10/2021   
 **Problems you ran into today:** map formatting     
 **Daily Interactions:** map addition     
 **Notable Changes:** map   
 
-**Commit Name on GitHub:** Sidebat  
+**Date:** 5/11/2021   
 **Problems you ran into today:** ads     
 **Daily Interactions:** ads     
 **Notable Changes:** ads     
 
-**Commit Name on GitHub:** Sidebat  
+**Date:** 5/12/2021   
 **Problems you ran into today:** forming good ideas     
 **Daily Interactions:** ideas     
-**Notable Changes:** ideas     
+**Notable Changes:** none     
+
+**Date:** 5/14/2021   
+**Problems you ran into today:** chartjs initialization     
+**Daily Interactions:** getting the chart to work     
+**Notable Changes:** chart addition     
+
+**Date:** 5/17/2021   
+**Problems you ran into today:** chartjs formatting     
+**Daily Interactions:** chartjs     
+**Notable Changes:** "finalized" chart     
 
 ---
 
 ## Developing - Jordan
 
 **Commit Name on GitHub:** Jslash101940  
+
+**Date:** 5/6/2021   
 **Problems you ran into today:** portfolio  
 **Daily Interactions:** portfolio  
 **Notable Changes:** portfolio  
 
-**Date:** 5/14/2021   
+**Date:** 5/7/2021   
 **Problems you ran into today:** background  
 **Daily Interactions:** background  
-**Notable Changes:** background  
+**Notable Changes:** none  
 
-**Date:** 5/14/2021   
+**Date:** 5/10/2021   
 **Problems you ran into today:** portfolio  
 **Daily Interactions:** portfolio  
 **Notable Changes:** portfolio  
@@ -146,6 +167,11 @@
 **Notable Changes:** portfolio  
 
 **Date:** 5/14/2021   
+**Problems you ran into today:** portfolio  
+**Daily Interactions:** portfolio  
+**Notable Changes:** portfolio  
+
+**Date:** 5/17/2021   
 **Problems you ran into today:** portfolio  
 **Daily Interactions:** portfolio  
 **Notable Changes:** portfolio  
