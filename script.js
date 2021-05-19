@@ -1774,6 +1774,7 @@ function now() {
             const TZ = document.createElement("H1")
             const SUNR = document.createElement("p")
             const SUNS = document.createElement("p")
+            // const IMG = documet.createElement("img")
             P.textContent = (`CURRENT TIME`)
             TZ.textContent = (`Current Time: ${dateInfo}`)
             SUNR.textContent = JSON.stringify(`Sunrise: ${sunrise}`)
@@ -1980,7 +1981,7 @@ function day() {
 
             const DAY = info["daily"];
 
-            for (i in DAY) {
+            for (i=0; i <= 7; i++) {
                 const MAIN = document.createElement("section")
                 const DATETIME = document.createElement("p")
                 const TEMP = document.createElement("p")
@@ -1988,8 +1989,8 @@ function day() {
 
                 const DTEMP = DAY[i]["temp"]
 
-                DATETIME.textContent = `${array[loop3]}`
-                TEMP.textContent = `Temperature: ${DTEMP["day"]}`
+                DATETIME.textContent = `${array[loop3]} `
+                TEMP.textContent = ` Temperature: ${DTEMP["day"]}`
                 FTEMP.textContent = `Feels Like: ${DTEMP["min"]}`
 
                 loop3++
@@ -2166,3 +2167,15 @@ if (page == 1) {
         }
     }
 }
+
+home.addEventListener("mousemove", function(){
+    now();
+})
+
+hourHome.addEventListener("mousemove", function(){
+    hour();
+})
+
+dayHome.addEventListener("mousemove", function(){
+    day();
+})

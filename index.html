@@ -35,24 +35,13 @@
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" id="home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">Link</a>
+                        <a class="nav-link active" aria-current="page" id="hourHome">Weather by the Hour</a>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="true">
-                            Dropdown
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" id="dayHome">Weather by the Day</a>
                     </li>
                 </ul>
                 <form class="d-flex">
@@ -179,8 +168,8 @@
                                         label: 'Temparuture',
                                         backgroundColor: 'rgb(0, 0, 0)',
                                         borderColor: 'rgb(255, 255, 0)',
-                                        data: [80, 80, 79, 77, 74, 71, 70, 69, 68, 67, 67, 68, 70, 73, 75, 77, 80, 82, 84, 86, 87, 88, 86, 84, 82,]
-
+                                        data: [80, 80, 79, 77, 74, 71, 70, 69, 68, 67, 67, 68, 70, 73, 75, 77, 80, 82, 84, 86, 87, 88, 86, 84, 82,],
+                                        data2: [10, 200, 79, 77, 74, 71, 70, 69, 68, 67, 67, 68, 70, 73, 75, 77, 80, 82, 84, 86, 87, 88, 86, 84, 82,]
                                     }]
                                 };
 
