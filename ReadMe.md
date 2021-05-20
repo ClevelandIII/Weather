@@ -99,6 +99,11 @@
 **Daily Interactions:** small little design additions      
 **Notable Changes:** daily bug fixed     
 
+**Date:** 5/19/2021   
+**Problems you ran into today:** chartjs formatting    
+**Daily Interactions:** mobile and tablet formatting      
+**Notable Changes:** graph section added     
+
 ---
 
 ## Developing - Jimmy
@@ -140,11 +145,15 @@
 **Daily Interactions:** chartjs     
 **Notable Changes:** "finalized" chart     
 
-
-**Date:** 5/17/2021   
+**Date:** 5/18/2021   
 **Problems you ran into today:** not here     
 **Daily Interactions:** not here     
 **Notable Changes:** not here     
+
+**Date:** 5/19/2021   
+**Problems you ran into today:** chartjs formatting     
+**Daily Interactions:** chart and ads     
+**Notable Changes:** new ads     
 
 ---
 
@@ -188,6 +197,11 @@
 **Notable Changes:** portfolio  
 
 **Date:** 5/18/2021   
+**Problems you ran into today:** portfolio  
+**Daily Interactions:** portfolio  
+**Notable Changes:** portfolio  
+
+**Date:** 5/19/2021   
 **Problems you ran into today:** portfolio  
 **Daily Interactions:** portfolio  
 **Notable Changes:** portfolio  
