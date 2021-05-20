@@ -230,3 +230,8 @@
 **What was the hardest part of this project:**  
 **What part was the most fun to do:**  
 **Is there a way that I could have made this SDLC better or more comprehensive:**  
+
+
+
+
+make sure to fix gitpages by adding bootsrap and chart js cdn.
