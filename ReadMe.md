@@ -104,6 +104,11 @@
 **Daily Interactions:** mobile and tablet formatting      
 **Notable Changes:** graph section added     
 
+**Date:** 5/20/2021   
+**Problems you ran into today:** none    
+**Daily Interactions:** Homepage      
+**Notable Changes:** gNew map, new svgs, new page formatting, new navbar buttons, new descriptors     
+
 ---
 
 ## Developing - Jimmy
@@ -155,6 +160,11 @@
 **Daily Interactions:** chart and ads     
 **Notable Changes:** new ads     
 
+**Date:** 5/20/2021   
+**Problems you ran into today:** none     
+**Daily Interactions:** map and color     
+**Notable Changes:** none     
+
 ---
 
 ## Developing - Jordan
@@ -202,6 +212,11 @@
 **Notable Changes:** portfolio  
 
 **Date:** 5/19/2021   
+**Problems you ran into today:** portfolio  
+**Daily Interactions:** portfolio  
+**Notable Changes:** portfolio  
+
+**Date:** 5/20/2021   
 **Problems you ran into today:** portfolio  
 **Daily Interactions:** portfolio  
 **Notable Changes:** portfolio  
