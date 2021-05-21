@@ -109,6 +109,11 @@
 **Daily Interactions:** Homepage      
 **Notable Changes:** gNew map, new svgs, new page formatting, new navbar buttons, new descriptors     
 
+**Date:** 5/21/2021   
+**Problems you ran into today:** none    
+**Daily Interactions:** Homepage      
+**Notable Changes:** remove breadcrumb, hover, section color     
+
 ---
 
 ## Developing - Jimmy
@@ -163,6 +168,11 @@
 **Date:** 5/20/2021   
 **Problems you ran into today:** none     
 **Daily Interactions:** map and color     
+**Notable Changes:** none     
+
+**Date:** 5/21/2021   
+**Problems you ran into today:** none     
+**Daily Interactions:** none     
 **Notable Changes:** none     
 
 ---
@@ -221,32 +231,32 @@
 **Daily Interactions:** portfolio  
 **Notable Changes:** portfolio  
 
+**Date:** 5/21/2021   
+**Problems you ran into today:** portfolio  
+**Daily Interactions:** portfolio  
+**Notable Changes:** portfolio  
+
 # Testing
 
 **Site Version :** 1.0  
-**Errors found:**  
-**Errors fixed:**  
-**Errors Ignored:**  
-**Why:**  
+**Errors found:** Slight bug with resizing   
+**Errors fixed:** None      
+**Errors Ignored:** resizing   
+**Why:** Too small to focus on   
 
 # Delivery 
 
-**Screenshots of final product:**  
-**How will it be presented?**  
-**Who is presenting what?**  
-**How did they like it?**  
-**Was there anything to fix or change?**  
+**Screenshots of final product:** The screenshot is in the images folder as "finalpic"   
+**How will it be presented?** It will be linked to the consumer via github   
+**Who is presenting what?** The entire group gives a copy to the consumer   
+**How did they like it?** They liked it i hope ;)   
+**Was there anything to fix or change?** The final project doesnt require fixing, it will be finalized as is.   
 
 # Maintenance
 
 > *This is normally a section for later that is used after development. This time it will be a reflection area.*
 
-**What did you do wrong, and how will you do it differently next time:**  
-**What was the hardest part of this project:**  
-**What part was the most fun to do:**  
-**Is there a way that I could have made this SDLC better or more comprehensive:**  
-
-
-
-
-make sure to fix gitpages by adding bootsrap and chart js cdn.
+**What did you do wrong, and how will you do it differently next time:** As the consumer reported, the blocks of text lokked a bit... weird. Without their input i probably would have left it unchanged. Maybe instead i can review with the consumer sooner?   
+**What was the hardest part of this project:** Oh man, the chart js BY FAR was the most annyoing part of the process. I would say i figured it out now, but before it was so difficult i didnt want to continue. I think the only reason i contnued with it was because i spend like 1.5 days on it.   
+**What part was the most fun to do:** The JSON. Once i was able to figure it out it was kinda fun to edit things.   
+**Is there a way that I could have made this SDLC better or more comprehensive:** Maybe i should have included Jimmy and Jordan in these bits...   
