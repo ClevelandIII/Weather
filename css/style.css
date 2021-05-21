@@ -19,6 +19,7 @@ section {
   background-color: #b3ffff;
   margin-bottom: 0.5%;
   padding: 0.5%;
+  border-radius: 10px;
 }
 
 #less {
@@ -140,5 +141,12 @@ iframe {
 #dayHome,
 #graphHome {
   cursor: pointer;
+}
+
+#home:hover,
+#hourHome:hover,
+#dayHome:hover,
+#graphHome:hover {
+  color: black;
 }
 /*# sourceMappingURL=style.css.map */

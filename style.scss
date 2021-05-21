@@ -51,6 +51,7 @@ section {
     background-color: rgb(179, 255, 255);
     margin-bottom: 0.5%;
     padding: 0.5%;
+    border-radius: 10px;
 }
 
 #less {
@@ -174,4 +175,8 @@ iframe {
 #dayHome,
 #graphHome {
     cursor: pointer;
+
+    &:hover{
+        color: black;
+    }
 }
