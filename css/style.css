@@ -18,7 +18,7 @@ main {
 section {
   background-color: #b3ffff;
   margin-bottom: 0.5%;
-  padding: .5%;
+  padding: 0.5%;
 }
 
 #less {
@@ -29,7 +29,9 @@ section {
   background-color: rgba(0, 0, 0, 0);
 }
 
-#eightt, #ninee, #tenn {
+#eightt,
+#ninee,
+#tenn {
   margin-bottom: 2%;
 }
 
@@ -131,5 +133,12 @@ iframe {
 #no {
   border: none;
   background-color: rgba(95, 158, 160, 0);
+}
+
+#home,
+#hourHome,
+#dayHome,
+#graphHome {
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */

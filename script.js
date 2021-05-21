@@ -1701,7 +1701,14 @@ let loop2 = 1;
 let loop3 = 1;
 let array = ["Today", "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
 
-let dateInfo = new Date().toLocaleString();
+let date = new Date();
+
+let options = {
+    weekday: "long",
+    year: "numeric",
+    month: "2-digit",
+    day: "numeric"
+};
 
 function now() {
     page = 1;
@@ -1742,8 +1749,6 @@ function now() {
 
         let section1 = document.getElementById("one");
         section1.innerHTML = "";
-        let section2 = document.getElementById("two");
-        section2.innerHTML = "";
         let section3 = document.getElementById("three");
         section3.innerHTML = "";
         let section4 = document.getElementById("four");
@@ -1774,30 +1779,30 @@ function now() {
         createSection5(superObj);
 
         function createSection1() {
-            const P = document.createElement("p")
-            const TZ = document.createElement("H1")
-            const SUNR = document.createElement("p")
-            const SUNS = document.createElement("p")
-            // const IMG = documet.createElement("img")
-            P.textContent = (`CURRENT TIME`)
-            TZ.textContent = (`Current Time: ${dateInfo}`)
-            SUNR.textContent = JSON.stringify(`Sunrise: ${sunrise}`)
-            SUNS.textContent = JSON.stringify(`Sunset: ${sunset}`)
-            section1.appendChild(P);
+            const TZ = document.createElement("H2")
+            TZ.innerHTML = (`<img src="./img/clock.svg"> Current Time: ${date.toLocaleDateString("en", options)}`)
             section1.appendChild(TZ);
-            section1.appendChild(SUNR);
-            section1.appendChild(SUNS);
         }
 
         function createSection2() {
             const P = document.createElement("p")
-            const TEMP = document.createElement("H1")
+            const TEMPDEC = document.createElement("H3")
+            const TEMPF = document.createElement("p")
+            const TEMPC = document.createElement("p")
             const TTEMP = document.createElement("p")
-            P.textContent = (`CURRENT WEATHER`)
-            TEMP.textContent = JSON.stringify(`Current Temperature: ${temp} Degrees F/ ${Math.ceil((temp - 32) * 5 / 9)} Degrees C`)
-            TTEMP.textContent = JSON.stringify(`Feels like ${ttemp}`)
+            const FILLER = document.createElement("br")
+            P.innerHTML = (`<img src="./img/sun.svg"> CURRENT WEATHER`)
+            TEMPDEC.textContent = (`Current Temperature: `)
+            TEMPF.textContent = (`${temp} Degrees F`)
+            TEMPC.textContent = (`${Math.ceil((temp - 32) * 5 / 9)} Degrees C`)
+
+            TTEMP.textContent = (`Feels like ${ttemp}`)
             section3.appendChild(P);
-            section3.appendChild(TEMP);
+            section3.appendChild(TEMPDEC);
+            section3.appendChild(TEMPF);
+            section3.appendChild(TEMPC);
+            section3.appendChild(FILLER);
+
             section3.appendChild(TTEMP);
 
             const HR1 = document.createElement("hr")
@@ -1823,11 +1828,11 @@ function now() {
 
         function createSection3() {
             const P = document.createElement("p")
-            const SKY = document.createElement("H1")
+            const SKY = document.createElement("H3")
             const MAIND = document.createElement("p")
-            P.textContent = (`SKY BOX`)
-            SKY.textContent = JSON.stringify(`Current Sky Box: Clear`)
-            MAIND.textContent = JSON.stringify(`Looks like: Blue`)
+            P.innerHTML = (`<img src="./img/cloud.svg"> SKY AND CLOUDS`)
+            SKY.textContent = (`Current cloud count: ${clouds}`)
+            MAIND.textContent = (`Cloud density: Clear`)
             section5.appendChild(P);
             section5.appendChild(SKY);
             section5.appendChild(MAIND);
@@ -1835,8 +1840,8 @@ function now() {
             const CLOUD = document.createElement("p");
             const PRESSURE = document.createElement("p");
             const HR = document.createElement("hr");
-            CLOUD.textContent = JSON.stringify(`Current cloud index: ${clouds}`)
-            PRESSURE.textContent = JSON.stringify(`Current Pressure: ${pressure}`)
+            CLOUD.textContent = (`Current cloud index: ${clouds}`)
+            PRESSURE.textContent = (`Current Pressure: ${pressure}`)
             section6.appendChild(CLOUD)
             section6.appendChild(HR)
             section6.appendChild(PRESSURE)
@@ -1844,7 +1849,7 @@ function now() {
 
         function createSection4() {
             const P = document.createElement("p")
-            P.textContent = (`5 - Minute Weather`)
+            P.innerHTML = (`<img src="./img/rain.svg"> 5 - Minute Weather`)
             section11.appendChild(P)
 
             const FIVEMIN = info["minutely"];
@@ -1869,7 +1874,7 @@ function now() {
 
         function createSection5() {
             const P = document.createElement("p")
-            P.textContent = (`10 - Minute Weather`)
+            P.innerHTML = (`<img src="./img/rain.svg"> 10 - Minute Weather`)
             section12.appendChild(P)
 
             const TENMIN = info["minutely"];
@@ -1934,18 +1939,27 @@ function hour() {
         // createSection5(superObj);
 
         function createSection1() {
+            const DIV = document.createElement("div")
+            const MAIN = document.createElement("section")
             const P = document.createElement("p")
-            P.textContent = (`Hourly Weather`)
+
+            P.innerHTML = (`<img src="./img/sun.svg"> HOURLY WEATHER`)
+
+            MAIN.appendChild(P)
+
+            DIV.appendChild(MAIN)
+
+            sectionI.appendChild(DIV)
 
             const HOUR = info["hourly"];
-
             for (i = 0; i <= 24; i++) {
+                const DIV = document.createElement("div")
                 const MAIN = document.createElement("section")
                 const DATETIME = document.createElement("p")
                 const TEMP = document.createElement("p")
                 const FTEMP = document.createElement("p")
 
-                DATETIME.textContent = `${loop2} Hour/s after the current time`
+                DATETIME.innerHTML = (`<img src="./img/sun.svg"> ${loop2} Hour/s after the current time`)
                 TEMP.textContent = `Temperature: ${HOUR[i]["temp"]}`
                 FTEMP.textContent = `Feels Like: ${HOUR[i]["feels_like"]}`
 
@@ -1955,7 +1969,9 @@ function hour() {
                 MAIN.appendChild(TEMP)
                 MAIN.appendChild(FTEMP)
 
-                sectionI.appendChild(MAIN)
+                DIV.appendChild(MAIN)
+
+                sectionI.appendChild(DIV)
             }
         }
     }
@@ -1998,11 +2014,19 @@ function day() {
         createSection1(superObj);
 
         function createSection1() {
+            const DIV = document.createElement("div")
+            const MAIN = document.createElement("section")
             const P = document.createElement("p")
-            P.textContent = (`Daily Weather`)
+
+            P.innerHTML = (`<img src="./img/sun.svg"> DAILY WEATHER`)
+
+            MAIN.appendChild(P)
+
+            DIV.appendChild(MAIN)
+
+            sectionI2.appendChild(DIV)
 
             const DAY = info["daily"];
-
             for (i in DAY) {
                 console.log(i)
                 const MAIN = document.createElement("section")
@@ -2012,7 +2036,7 @@ function day() {
 
                 const DTEMP = DAY[i]["temp"]
 
-                DATETIME.textContent = `${array[loop3]} `
+                DATETIME.innerHTML = (`<img src="./img/sun.svg"> ${array[loop3]} `)
                 TEMP.textContent = ` Temperature: ${DTEMP["day"]}`
                 FTEMP.textContent = `Feels Like: ${DTEMP["min"]}`
 
@@ -2027,6 +2051,7 @@ function day() {
         }
     }
 }
+
 function graph() {
     page = 4;
 
@@ -2057,6 +2082,18 @@ function graph() {
         sectionI.style.display = "none"
         let sectionI2 = document.getElementById("less2");
         sectionI2.style.display = "none"
+
+        const DIV = document.createElement("div")
+        const MAIN = document.createElement("section")
+        const P = document.createElement("p")
+
+        P.innerHTML = (`<img src="./img/bar.svg"> DAILY WEATHER`)
+
+        MAIN.appendChild(P)
+
+        DIV.appendChild(MAIN)
+
+        .appendChild(DIV)
     }
 }
 
@@ -2094,8 +2131,6 @@ if (page == 1) {
 
     let section1 = document.getElementById("one");
     section1.innerHTML = "";
-    let section2 = document.getElementById("two");
-    section2.innerHTML = "";
     let section3 = document.getElementById("three");
     section3.innerHTML = "";
     let section4 = document.getElementById("four");
@@ -2126,30 +2161,30 @@ if (page == 1) {
     createSection5(superObj);
 
     function createSection1() {
-        const P = document.createElement("p")
-        const TZ = document.createElement("H1")
-        const SUNR = document.createElement("p")
-        const SUNS = document.createElement("p")
-        // const IMG = documet.createElement("img")
-        P.textContent = (`CURRENT TIME`)
-        TZ.textContent = (`Current Time: ${dateInfo}`)
-        SUNR.textContent = JSON.stringify(`Sunrise: ${sunrise}`)
-        SUNS.textContent = JSON.stringify(`Sunset: ${sunset}`)
-        section1.appendChild(P);
+        const TZ = document.createElement("H2")
+        TZ.innerHTML = (`<img src="./img/clock.svg"> Current Time: ${date.toLocaleDateString("en", options)}`)
         section1.appendChild(TZ);
-        section1.appendChild(SUNR);
-        section1.appendChild(SUNS);
     }
 
     function createSection2() {
         const P = document.createElement("p")
-        const TEMP = document.createElement("H1")
+        const TEMPDEC = document.createElement("H3")
+        const TEMPF = document.createElement("p")
+        const TEMPC = document.createElement("p")
         const TTEMP = document.createElement("p")
-        P.textContent = (`CURRENT WEATHER`)
-        TEMP.textContent = JSON.stringify(`Current Temperature: ${temp} Degrees F/ ${Math.ceil((temp - 32) * 5 / 9)} Degrees C`)
-        TTEMP.textContent = JSON.stringify(`Feels like ${ttemp}`)
+        const FILLER = document.createElement("br")
+        P.innerHTML = (`<img src="./img/sun.svg"> CURRENT WEATHER`)
+        TEMPDEC.textContent = (`Current Temperature: `)
+        TEMPF.textContent = (`${temp} Degrees F`)
+        TEMPC.textContent = (`${Math.ceil((temp - 32) * 5 / 9)} Degrees C`)
+
+        TTEMP.textContent = (`Feels like ${ttemp}`)
         section3.appendChild(P);
-        section3.appendChild(TEMP);
+        section3.appendChild(TEMPDEC);
+        section3.appendChild(TEMPF);
+        section3.appendChild(TEMPC);
+        section3.appendChild(FILLER);
+
         section3.appendChild(TTEMP);
 
         const HR1 = document.createElement("hr")
@@ -2175,11 +2210,11 @@ if (page == 1) {
 
     function createSection3() {
         const P = document.createElement("p")
-        const SKY = document.createElement("H1")
+        const SKY = document.createElement("H3")
         const MAIND = document.createElement("p")
-        P.textContent = (`SKY BOX`)
-        SKY.textContent = JSON.stringify(`Current Sky Box: Clear`)
-        MAIND.textContent = JSON.stringify(`Looks like: Blue`)
+        P.innerHTML = (`<img src="./img/cloud.svg"> SKY AND CLOUDS`)
+        SKY.textContent = (`Current cloud count: ${clouds}`)
+        MAIND.textContent = (`Cloud density: Clear`)
         section5.appendChild(P);
         section5.appendChild(SKY);
         section5.appendChild(MAIND);
@@ -2187,8 +2222,8 @@ if (page == 1) {
         const CLOUD = document.createElement("p");
         const PRESSURE = document.createElement("p");
         const HR = document.createElement("hr");
-        CLOUD.textContent = JSON.stringify(`Current cloud index: ${clouds}`)
-        PRESSURE.textContent = JSON.stringify(`Current Pressure: ${pressure}`)
+        CLOUD.textContent = (`Current cloud index: ${clouds}`)
+        PRESSURE.textContent = (`Current Pressure: ${pressure}`)
         section6.appendChild(CLOUD)
         section6.appendChild(HR)
         section6.appendChild(PRESSURE)
@@ -2196,7 +2231,7 @@ if (page == 1) {
 
     function createSection4() {
         const P = document.createElement("p")
-        P.textContent = (`5 - Minute Weather`)
+        P.innerHTML = (`<img src="./img/rain.svg"> 5 - Minute Weather`)
         section11.appendChild(P)
 
         const FIVEMIN = info["minutely"];
@@ -2221,7 +2256,7 @@ if (page == 1) {
 
     function createSection5() {
         const P = document.createElement("p")
-        P.textContent = (`10 - Minute Weather`)
+        P.innerHTML = (`<img src="./img/rain.svg"> 10 - Minute Weather`)
         section12.appendChild(P)
 
         const TENMIN = info["minutely"];
@@ -2245,18 +2280,18 @@ if (page == 1) {
     }
 }
 
-home.addEventListener("mousemove", function () {
+home.addEventListener("mousedown", function () {
     now();
 })
 
-hourHome.addEventListener("mousemove", function () {
+hourHome.addEventListener("mousedown", function () {
     hour();
 })
 
-dayHome.addEventListener("mousemove", function () {
+dayHome.addEventListener("mousedown", function () {
     day();
 })
 
-graphHome.addEventListener("mousemove", function () {
+graphHome.addEventListener("mousedown", function () {
     graph();
 })
