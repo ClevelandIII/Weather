@@ -1,5 +1,10 @@
 #mainNav {
   background-color: #2c80ff;
+  margin-bottom: 0.5%;
+}
+
+#sideNav {
+  background-color: #2c80ff;
 }
 
 body {
@@ -16,7 +21,7 @@ main {
 }
 
 section {
-  background-color: #b3ffff;
+  background-color: #74fff373;
   margin-bottom: 0.5%;
   padding: 0.5%;
   border-radius: 10px;
@@ -136,6 +141,10 @@ iframe {
   background-color: rgba(95, 158, 160, 0);
 }
 
+#no:hover {
+  color: white;
+}
+
 #home,
 #hourHome,
 #dayHome,
@@ -147,6 +156,10 @@ iframe {
 #hourHome:hover,
 #dayHome:hover,
 #graphHome:hover {
+  color: black;
+}
+
+#switch:hover {
   color: black;
 }
 /*# sourceMappingURL=style.css.map */
